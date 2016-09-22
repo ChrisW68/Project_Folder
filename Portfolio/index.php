@@ -58,7 +58,7 @@
                 
                 <div class="middle text-center clearfix">
                     <div class="container">
-                        <h1 class="pro-name">Chris <!-- <span style="color: #71b644;" > -->Wisemanr<!-- </span> --></h1>
+                        <h1 class="pro-name">Chris <!-- <span style="color: #71b644;" > -->Wiseman<!-- </span> --></h1>
                         <p class="tagline">Software Developer - Web Developer</p>
                         <div class="skills">
 
@@ -82,25 +82,49 @@
             <div class="isotope portfolio-items">
                 <div class="element-item grid">
                   <div class="effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/HTMLCSS-logo.jpg" height="100%">
+                        <img class="img-responsive" alt="Portfolio" src="img/HTMLCSS-logo.jpg" height="90%">
                     	<?php include ("php/htmlCss.php");?>
+                        
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/PHP-logo.jpg">
-                        <?php include ("php/PHPskills.php");?>
+                      <img class="img-responsive" alt="Portfolio" src="img/PHP-logo.jpg">
+                      <a href="#"  data-toggle="modal" data-target="#modal1" class="btn btn-default" role="button">Open Modal Pop-up</a>
+                      <div id="modal1" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading1">
+                        <div class="modal-dialog modal-md" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                              <h3 class="modal-title" id="modalheading1">Some of my work in PHP!</h3>
+                            </div>
+                            <div class="modal-body"> 
+                            <figcaption>
+  								<h3><b>Here is some of my work!</b></h3>
+                            <ul>
+                              <li><a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE">Live Project</a></li>
+                              <li><a href="https://github.com/ChrisW68/Project_Folder/tree/master/AJAX%20%26%20PHP%20Chat%20messenger">Instant Messenger!</a></li>
+                            </ul>
+                            </p>
+                          </figcaption>
+                            </div>
+                            <div class="modal-footer" data-dismiss="modal">
+                              <button class="btn btn-primary">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
                         <img class="img-responsive" alt="Portfolio" src="img/Python-logo.jpg" height="100%">
                         <?php include ("php/Pythonskills.php");?>
-                    </div>
+                  </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/SQL-logo.jpg">
+                        <img class="img-responsive" alt="Portfolio" src="img/SQL-logo.jpg" height="90%">
                         <?php include ("php/htmlCss.php");?>
                     </div>
                 </div>
@@ -124,7 +148,7 @@
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work6.jpg">
+                        <img class="img-responsive" alt="Portfolio" src="img/workinprogress-image.jpg">
                         <?php include ("php/htmlCss.php");?>
                     </div>
                 </div>
@@ -268,7 +292,7 @@
                                                 </div>
                                                 <p>
                                                     <strong> Email:</strong> chris.wiseman74@gmail.com
-                                                </p>
+                                              </p>
                                             </div>
                                         </div>
                                     </div>
