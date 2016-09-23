@@ -57,6 +57,9 @@ html, body {
 *, *:active, *:focus, *:hover {
 	outline: none;
 }
+.modal-content div a {
+}
+
 
 h1, h2, h3, h4, h5,h6 {
 	margin-top: 0;
@@ -64,7 +67,7 @@ h1, h2, h3, h4, h5,h6 {
 
 body {
 	font: 15px/23px "Lucida Sans","Liberation Sans","Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
-	background-color: rgb(224, 247, 246);
+	background-color: rgba(27,46,52,1.00);
 
 }
 
@@ -83,6 +86,16 @@ body {
 
 .block-heading p {
     font-size: 18px;
+}
+
+.name {
+  font-family: 'Vast Shadow';
+  font-size: 65px;
+  margin-top: 20px;
+  margin-left: 23.5%;
+  width: 600px;
+  color: white;
+  text-shadow: -2.5px -2px 3px black;
 }
 
 .figCaption {
@@ -130,6 +143,23 @@ body {
 #site-header h1 a:hover {
 	text-decoration: none;
 }
+
+.img-circle {
+  border-radius: 120%;
+  border: 2px ridge #0E1015;
+  box-shadow: 0 3px 30px grey inset;
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
+}
+@-moz-keyframes spin { 25% { -moz-transform: rotateX(20deg); } }
+@-webkit-keyframes spin { 25% { -webkit-transform: rotateX(20deg); } }
+@keyframes spin { 25% { -webkit-transform: rotateX(20deg); transform:rotatex(20deg); } }
+  
+
 
 /*////////////////////////////////////////////////////////////////////////
 //  03 - Navigation
@@ -271,13 +301,14 @@ body {
 ///////////////////////////////////////////////////////////////////////*/
 
 #portfolio {
-	padding: 60px 0;
+	padding: 50px;
 }
+
 
 #portfolio .block-heading h1 {
     color: rgb(0, 129, 129);
 	
-	font-weight: 400;
+	font-weight: 200;
 	
     font-size: 55px;
     font-family: 'Milonga', cursive;
@@ -293,6 +324,17 @@ body {
 
 .portfolio-item {
 	position: relative;
+}
+
+.portfolio-header {
+	font-size: 12px;
+	font-style: bold inherit;
+	color: black;
+}
+
+.portfolio-description {
+	font-size: 10px;
+	
 }
 
 /*////////////////////////////////////////////////////////////////////////
@@ -393,6 +435,21 @@ body {
 	padding: 30px 10px;
 	color: cyan;
 	font-size: 22px;
+}
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 80%;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 500px);
+}
+
+.btn-php {
+	background-image:url(../img/PHP-logo.jpg);
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
@@ -641,6 +698,12 @@ input[type="submit"]:hover {
     background-color: #44619D;
 }
 
+.github-icon {
+    padding: 10px 17px;
+    border: 1px solid #44619D;
+    background-color: #44619D;
+}
+
 .facebook-icon:hover {
     background-color: transparent;
     color: #fff;
@@ -761,6 +824,8 @@ i.fa.fa-envelope-o {
 	}
 }
 
+
+
 @media (max-width: 500px) {
 	.contact-info {
 		padding: 30px 10px;
@@ -781,5 +846,3 @@ i.fa.fa-envelope-o {
     background-size: cover;
     }
 }
-
-
