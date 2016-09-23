@@ -23,7 +23,8 @@
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-    <script src="jQueryAssets/SpryDOMUtils.js" type="text/javascript"></script>
+        <!-- <script src="jQueryAssets/SpryDOMUtils.js" type="text/javascript"></script> -->
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
     </head>
     <body>
@@ -58,7 +59,8 @@
                 
                 <div class="middle text-center clearfix">
                     <div class="container">
-                        <h1 class="pro-name">Chris <!-- <span style="color: #71b644;" > -->Wiseman<!-- </span> --></h1>
+                   	  <center><img src="img/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
+                        <h1 class="name">Chris <!-- <span style="color: #71b644;" > -->Wiseman<!-- </span> --></h1>
                         <p class="tagline">Software Developer - Web Developer</p>
                         <div class="skills">
 
@@ -88,32 +90,9 @@
                     </div>
                 </div>
                 <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                      <img class="img-responsive" alt="Portfolio" src="img/PHP-logo.jpg">
-                      <a href="#"  data-toggle="modal" data-target="#modal1" class="btn btn-default" role="button">Open Modal Pop-up</a>
-                      <div id="modal1" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading1">
-                        <div class="modal-dialog modal-md" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
-                              <h3 class="modal-title" id="modalheading1">Some of my work in PHP!</h3>
-                            </div>
-                            <div class="modal-body"> 
-                            <figcaption>
-  								<h3><b>Here is some of my work!</b></h3>
-                            <ul>
-                              <li><a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE">Live Project</a></li>
-                              <li><a href="https://github.com/ChrisW68/Project_Folder/tree/master/AJAX%20%26%20PHP%20Chat%20messenger">Instant Messenger!</a></li>
-                            </ul>
-                            </p>
-                          </figcaption>
-                            </div>
-                            <div class="modal-footer" data-dismiss="modal">
-                              <button class="btn btn-primary">Cancel</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="portfolio-item">
+                      <?php include ("php/PHPskills.php");?>
+                     
                     </div>
                 </div>
                 <div class="element-item grid">
@@ -196,8 +175,16 @@
                     <div class="container-fluid numbers-title">
                         <div class="container">
                             <div class="row block-heading">
-                                <h1>Some Cool Facts About Me</h1>
+                                <h1>Some Cool Facts About Me(at least I think so)</h1>
                             </div>
+                            <p class="about-me col-md-6" align="left">I started my career as a Manufacturing Engineer.</br>
+                            I loved getting my hands dirty and figuring out how things tick,</br>
+                            most of the time having to reverse engineer before figuring out how they worked</br>
+                            When not programming:</br>
+							I enjoy working on my house (always making it just a little more energy efficient and adding unique touches).</br>		Trying (I do mean TRYING) to grow something in my vegetable garden</br>
+                            When I have time, I find new places to explore hiking/cross-country/canoeing/paddle boarding.</p>
+                            
+                            
                         </div>
                     </div>
                     <div class="container-fluid">
@@ -299,10 +286,8 @@
                                 </div>
                                 <div class="row">
                                     <ul class="social-box">
-                                        <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="g-plus-icon" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a class="linkedin-icon" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="github-icon" href="https://github.com/ChrisW68"><i class="fa fa-github"></i></a></li>
+                                        <li><a class="linkedin-icon" href="https://www.linkedin.com/in/mrwiseman"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
