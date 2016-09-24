@@ -23,6 +23,7 @@
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
         <!-- <script src="jQueryAssets/SpryDOMUtils.js" type="text/javascript"></script> -->
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
@@ -32,7 +33,7 @@
             <div id="overlay-1">
                 <header id="site-header" class="clearfix">
                     <div class="pull-left">
-                        <h1><a href="#">Software Developer</a></h1>
+                        <h1 class="talent pulse">Software Developer - Web Developer - Software Designer</h1>
                     </div>
                     <div class="pull-right">
                         <nav class="navbar site-nav" role="navigation">
@@ -78,57 +79,142 @@
         <div class="content-block text-center" id="portfolio">
             <header class="block-heading cleafix">
                 <h1>Development Skills</h1>
+                <p class="wheretopress">(Press programming logos for more detail)</p>
                 <!-- <p>Take a look at some of my recent products</p> -->
             </header>
 
             <div class="isotope portfolio-items">
                 <div class="element-item grid">
-                  <div class="effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/HTMLCSS-logo.jpg" height="90%">
-                    	<?php include ("php/htmlCss.php");?>
-                        
-                    </div>
-                </div>
-                <div class="element-item grid">
                     <div class="portfolio-item">
-                      <?php include ("php/PHPskills.php");?>
-                     
+                      <a href="#"  data-toggle="modal" data-target="#modal2" class="btn btn-default" role="button"><img src="img/HTMLCSS-logo.jpg" height="175px" alt="HTMLCSSlogo"/></a>
+                      <div id="modal2" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading2">
+                        <div class="modal-dialog modal-md" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                              <h3 class="modal-title" id="modalheading2">Modal Pop-up Title</h3>
+                            </div>
+                            <div class="modal-body"><?php include ("php/htmlCss.php");?></div>
+                            <div class="modal-footer" data-dismiss="modal">
+                              <button class="btn btn-primary">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/Python-logo.jpg" height="100%">
-                        <?php include ("php/Pythonskills.php");?>
-                  </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/SQL-logo.jpg" height="90%">
-                        <?php include ("php/htmlCss.php");?>
+                      <a href="#"  data-toggle="modal" data-target="#modal1" class="btn btn-default" role="button"><img src="img/PHP-logo.jpg" height="175px" alt="PHPlogo"/>p</a>
+                        <div id="modal1" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading1">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading1">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"><?php include ("php/PHPskills.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work8.png">
-                        <?php include ("php/htmlCss.php");?>
+                      <a href="#"  data-toggle="modal" data-target="#modal3" class="btn btn-default" role="button"><img src="img/SQL-logo.jpg" height="175" alt="SQLlogo"/></a>
+                        <div id="modal3" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading3">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading3">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"><?php include ("php/SQLskills.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work4.jpg">
-                        <?php include ("php/htmlCss.php");?>
+                      <a href="#"  data-toggle="modal" data-target="#modal4" class="btn btn-default" role="button"><img src="img/Python-logo.jpg" height="175" alt="Pythonlogo"/></a>
+                        <div id="modal4" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading4">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading4">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"><?php include ("php/Pythonskills.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work5.jpg">
-                        <?php include ("php/htmlCss.php");?>
+                      <a href="#"  data-toggle="modal" data-target="#modal5" class="btn btn-default" role="button"><img src="img/net.png" height="175" alt="MVClogo"/></a>
+                        <div id="modal5" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading5">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading5">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"> <?php include ("php/MVC.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/workinprogress-image.jpg">
-                        <?php include ("php/htmlCss.php");?>
+                      <a href="#"  data-toggle="modal" data-target="#modal6" class="btn btn-default" role="button"><img src="img/JavaScript.png" height="175" alt="JavaScriptlogo"/></a>
+                        <div id="modal6" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading6">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading6">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"><?php include ("php/JavaScript.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-item grid">
+                    <div class="portfolio-item effect-zoe">
+                      <a href="#"  data-toggle="modal" data-target="#modal7" class="btn btn-default" role="button"><img src="img/workinprogress-image.jpg" height="175px" alt="workInProgressLogo"/></a>
+                        <div id="modal7" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading7">
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                <h3 class="modal-title" id="modalheading7">Modal Pop-up Title</h3>
+                              </div>
+                              <div class="modal-body"><?php include ("php/WorkInProgress.php");?></div>
+                              <div class="modal-footer" data-dismiss="modal">
+                                <button class="btn btn-primary">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>	<!-- isotope portfolio-items -->
@@ -179,12 +265,11 @@
                             </div>
                             <p class="about-me col-md-6" align="left">I started my career as a Manufacturing Engineer.</br>
                             I loved getting my hands dirty and figuring out how things tick,</br>
-                            most of the time having to reverse engineer before figuring out how they worked</br>
+                            most of the time having to reverse engineer before figuring out how they worked.</br>
+                            I'm curious by nature.  Enjoy being challenged and finding solutions to problems.</br>
                             When not programming:</br>
 							I enjoy working on my house (always making it just a little more energy efficient and adding unique touches).</br>		Trying (I do mean TRYING) to grow something in my vegetable garden</br>
-                            When I have time, I find new places to explore hiking/cross-country/canoeing/paddle boarding.</p>
-                            
-                            
+                            When I have time, I find new places to explore hiking/cross-country/canoeing/paddle boarding.</p>  
                         </div>
                     </div>
                     <div class="container-fluid">
@@ -197,40 +282,67 @@
 
         <div class="content-block" id="testimonials">
             <header class="block-heading cleafix text-center">
-                <h1>What Clients Say</h1>
+                <h1>Soft Skills</h1>
                 <!-- <p>Lorem Ipsum Text</p> -->
             </header>
             <div class="block-content text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                        	<div class="owl-carousel">
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_31-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jhon Doe</strong><br>
-                                        <span>Head of Ideas, Technext</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_11-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jane Doe</strong><br>
-                                        <span>CEO, Apple Inc</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_22-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Albert Doe</strong><br>
-                                        <span>Team Lead, Design Studio</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-							</div>	<!-- owl-carousel -->
+                        <div class="col-md-2 col-md-offset-2">
+                        	<a href="#"  data-toggle="modal" data-target="#modal9" class="btn btn-default" role="button"><img alt="Project management" src="img/PM-logo.jpg" height="250px"></a>
+                            <div id="modal9" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading9">
+                              <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title" id="modalheading9">Modal Pop-up Title</h3>
+                                  </div>
+                                  <div class="modal-body"><?php include ("php/project-management.php");?></div>
+                                  <div class="modal-footer" data-dismiss="modal">
+                                    <button class="btn btn-primary">Cancel</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 						</div>	<!-- col-md-12 -->
+                        <div class="col-md-2 col-md-offset-2">
+                       	  <a href="#"  data-toggle="modal" data-target="#modal8" class="btn btn-default" role="button"><img alt="Time management" src="img/time management copy.jpg" height="250px"></a>
+                          <div id="modal8" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading8">
+                              <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title" id="modalheading8">Modal Pop-up Title</h3>
+                                  </div>
+                                  <div class="modal-body">
+                                  	<?php include ("php/time-management.php");?>
+                                  </div>
+                                  <div class="modal-footer" data-dismiss="modal">
+                                    <button class="btn btn-primary">Cancel</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-md-offset-2">
+                       	  <a href="#"  data-toggle="modal" data-target="#modal10" class="btn btn-default" role="button"><img alt="data" src="img/bigdata.jpg" height="250px"></a>
+                          <div id="modal10" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading8">
+                              <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title" id="modalheading8">Modal Pop-up Title</h3>
+                                  </div>
+                                  <div class="modal-body">
+                                  	<?php include ("php/time-management.php");?>
+                                  </div>
+                                  <div class="modal-footer" data-dismiss="modal">
+                                    <button class="btn btn-primary">Cancel</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>	<!-- row -->
                 </div>	<!-- container -->
             </div>	<!-- block-content -->
