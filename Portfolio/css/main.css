@@ -402,6 +402,33 @@ body {
 	border-radius: 0;
 	font-size: 18px;
 	padding: 16px 48px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.btn-view1 {
+	/* border: 1px solid #35405f;
+	color: #35405f;
+	border-radius: 0; */
+	text-transform: uppercase;
+	color: #07068F;
+	border: 1px solid #07068F;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	border-radius: 0;
+	font-size: 18px;
+	padding: 16px 48px;
+	margin-bottom: 5px;
+	margin-top:10px;
+}
+
+.btn-view1:hover {
+	color: lightseagreen;
+	border: 1px solid lightseagreen;
+	background-color: white;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 .btn-view:hover {
