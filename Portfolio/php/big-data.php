@@ -1,10 +1,10 @@
-<a href="#"  data-toggle="modal" data-target="#modal8" class="btn btn-default" role="button"><img alt="Time management" src="img/time management copy.jpg" height="250px"></a>
+<a href="#"  data-toggle="modal" data-target="#modal9" class="btn btn-default" role="button"><img alt="Big Data" src="img/bigdata.jpg" height="250px"></a>
 <div id="modal8" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading8">
     <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span area-hidden="true">&times;</span></button>
-          <h3 class="modal-title" id="modalheading8">Modal Pop-up Title</h3>
+          <h3 class="modal-title" id="modalheading8">Big Data Management</h3>
         </div>
         <div class="modal-body">
           <link href="../css/main.css" rel="stylesheet" type="text/css">

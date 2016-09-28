@@ -48,9 +48,9 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
+                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Development Skills</a></li>
                                     <li><a href="#services"><i class="fa fa-bullhorn"></i> Me</a></li>
-                                    
+                                    <li><a href="#testimonials"><i class="fa fa-bookmark"></i> Soft Skills</a></li>
                                     <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
                                 </ul>
                             </div>  <!-- /.navbar-collapse -->
@@ -59,19 +59,17 @@
                 </header>	<!-- site-header -->
                 
                 <div class="middle text-center clearfix">
-                    <div class="container">
+                    <div class="container-fluid fill-height">
                    	  <center><img src="img/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
-                        <h1 class="name">Chris Wiseman</h1>
-                        <p class="tagline">Software Developer - Web Developer</p>
-                        <div class="skills">
-
-                        </div>  <!-- skills -->
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
-                        <div>
-                        	<a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-                        </div>
+                        <center><h1 class="name">Chris Wiseman</h1></center>
+                        <center><p class="tagline">Software Developer - Web Developer</p></center>
+                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Contact Me!</a>
                     </div>  <!-- container -->
                 </div>  <!-- middle -->
+                
+                <div class="bottom text-center">
+                    <a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
+                </div>
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
 
@@ -85,7 +83,7 @@
             <div class="isotope portfolio-items">
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-					<?php include ("php/htmlCss.php");?>
+                    	<?php include ("php/htmlCss.php");?>
                     </div>
                 </div>
                 <div class="element-item grid">
@@ -100,69 +98,74 @@
                 </div>
                 <div class="element-item grid">
                     <div class="portfolio-item effect-zoe">
-                    	<?php include ("php/Pythonskills.php");?>
+                      <?php include ("php/Pythonskills.php");?>
                     </div>
                 </div>
-                <div class="element-item grid">
-                    <div class=""col-md-4"">
-                      <?php include ("php/MVC.php");?>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class=""col-md-4"">
-                      <?php include ("php/JavaScript.php");?>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class=""col-md-4"">
-                      <?php include ("php/WorkInProgress.php");?>
-                    </div>
-                </div>
+              </div>
+                <center><div class="row">
+                      <center><div class="col-md-3">
+                          <div class="portfolio-item effect-zoe">
+                            <?php include ("php/MVC.php");?>
+                          </div>
+                      </div></center>
+                      <center><div class="col-md-3">
+                          <div class="portfolio-item effect-zoe">
+                            <?php include ("php/JavaScript.php");?>
+                          </div>
+                      </div></center>
+                      <center><div class="col-md-3">
+                          <div class="portfolio-item effect-zoe">
+                            <?php include ("php/WorkInProgress.php");?>
+                      	  </div>
+                	  </div></center>
+                </div></center>
             </div>	<!-- isotope portfolio-items -->
-            <a href="#" class="btn btn-lg btn-view">
+            <center><a href="#contact" class="btn btn-lg btn-view">
                 <i class="fa fa-eye"></i>
-                <span>Initial screen</span>
-            </a>
+                <span><center>If you're interested</br> contact me!</center></span>
+            </a></center>
         </div>  <!-- content-block -->
-
         <div id="services" class="content-block">
             <div id="numbers" class="parallax">
                 <div class="overlay">
                     <!-- title -->
-                    <div class="container-fluid numbers-title">
-                        <div class="container">
-                        	<?php include ("php/about-me.php");?>
-                        </div>
-                    </div>
-                     <a href="#" class="btn btn-lg btn-view1"  margin="10px">
-            		<i class="fa fa-eye"></i>
-            		<span class="back">Back to top!</span>
-        		</a>
+                    <?php include ("php/about-me.php");?>      
                 </div><!-- overlay end -->
             </div>
-        </div>
+            <center><a href="#contact" class="btn btn-lg btn-view">
+                <i class="fa fa-eye"></i>
+                <span><center>If you're interested</br> contact me!</center></span>
+            </a></center>
+        </div><!-- content-block -->
         <div class="content-block" id="testimonials">
             <header class="block-heading cleafix text-center">
                 <h1>Soft Skills</h1>
-                <p class="wheretopress">(Press images for more detail)</p>
+                <!-- <p>Lorem Ipsum Text</p> -->
             </header>
             <div class="block-content text-center">
-				<div class="row" margin-bottom="10px">
-                	<div class="col-md-4">
-                		<?php include ("php/project-management.php");?>
-                	</div>
-                	<div class="col-md-4">
-                		<?php include ("php/time-management.php");?>
-                	</div>
-                	<div class="col-md-4">
-                		<?php include ("php/data-management.php");?>
-                	</div>
-    			</div>
-                <a href="#" class="btn btn-lg btn-view">
-            		<i class="fa fa-eye"></i>
-            		<span>Back to top!</span>
-        		</a>
-  			</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                        	<?php include ("php/project-management.php");?>
+						</div>	
+                        <div class="col-md-3">
+                       	  <?php include ("php/time-management.php");?>      
+                        </div>
+                        <div class="col-md-3">
+                       	  <?php include ("php/big-data.php");?>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>	<!-- row -->
+            </div>	<!-- container -->
+        </div>	<!-- block-content -->
+        <center><a href="#contact" class="btn btn-lg btn-view">
+                <i class="fa fa-eye"></i>
+                <span><center>If you're interested </br>contact me!</center></span>
+            </a></center>
+    </div>	<!-- content-block -->
+
         <div class="content-block" id="contact">
             <div class="overlay-3">
                 <header class="block-heading cleafix text-center">
