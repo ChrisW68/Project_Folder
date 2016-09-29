@@ -1,4 +1,5 @@
-<a href="#"  data-toggle="modal" data-target="#modal4" class="btn btn-default" role="button"><img src="img/Python-logo.jpg" height="175" alt="Pythonlogo"/></a>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<a href="#"  data-toggle="modal" data-target="#modal4" class="btn btn-default" role="button"><img src="img/Python-logo.jpg" alt="Pythonlogo"/></a>
 <div id="modal4" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading4">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">

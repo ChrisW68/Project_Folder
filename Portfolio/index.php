@@ -82,43 +82,27 @@
 
             <div class="isotope portfolio-items">
                 <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                    	<?php include ("php/htmlCss.php");?>
-                    </div>
+				  <?php include ("php/htmlCss.php");?>
                 </div>
                 <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                      <?php include ("php/PHPskills.php");?>
-                    </div>
+				  <?php include ("php/PHPskills.php");?>
                 </div>
                 <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                      <?php include ("php/SQLskills.php");?>
-                    </div>
+				  <?php include ("php/SQLskills.php");?>
                 </div>
                 <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                      <?php include ("php/Pythonskills.php");?>
-                    </div>
+				  <?php include ("php/Pythonskills.php");?>
+                </div>
+                <div class="element-item grid">
+				  <?php include ("php/MVC.php");?>
+                </div>
+                <div class="element-item grid">
+				  <?php include ("php/JavaScript.php");?>
+                </div>
+    <div class="element-item grid">
+    <?php include ("php/WorkInProgress.php");?>
                 </div>
               </div>
-                <center><div class="row">
-                      <center><div class="col-md-3">
-                          <div class="portfolio-item effect-zoe">
-                            <?php include ("php/MVC.php");?>
-                          </div>
-                      </div></center>
-                      <center><div class="col-md-3">
-                          <div class="portfolio-item effect-zoe">
-                            <?php include ("php/JavaScript.php");?>
-                          </div>
-                      </div></center>
-                      <center><div class="col-md-3">
-                          <div class="portfolio-item effect-zoe">
-                            <?php include ("php/WorkInProgress.php");?>
-                      	  </div>
-                	  </div></center>
-                </div></center>
             </div>	<!-- isotope portfolio-items -->
             <center><a href="#contact" class="btn btn-lg btn-view">
                 <i class="fa fa-eye"></i>
@@ -126,40 +110,33 @@
             </a></center>
         </div>  <!-- content-block -->
         <div id="services" class="content-block">
-            <div id="numbers" class="parallax">
-                <div class="overlay">
-                    <!-- title -->
-                    <?php include ("php/about-me.php");?>      
-                </div><!-- overlay end -->
-            </div>
-            <center><a href="#contact" class="btn btn-lg btn-view">
+          <div id="numbers" class="parallax">
+            <div class="overlay">
+              <!-- title -->
+              <?php include ("php/about-me.php");?> 
+              <div>
+                <center><a href="#contact" class="btn btn-lg btn-view-me">
                 <i class="fa fa-eye"></i>
                 <span><center>If you're interested</br> contact me!</center></span>
-            </a></center>
-        </div><!-- content-block -->
+                </a></center>
+              </div> 
+            </div><!-- overlay end -->  
+          </div>
+    </div><!-- content-block -->
         <div class="content-block" id="testimonials">
-            <header class="block-heading cleafix text-center">
-                <h1>Soft Skills</h1>
-                <!-- <p>Lorem Ipsum Text</p> -->
+          <header class="block-heading clearfix">
+              <center><h1>Soft Skills</h1>
+              <p class="wheretopress">(Press programming logos for more detail)</p></center>
+              <!-- <p>Take a look at some of my recent products</p> -->
             </header>
-            <div class="block-content text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                        	<?php include ("php/project-management.php");?>
-						</div>	
-                        <div class="col-md-3">
-                       	  <?php include ("php/time-management.php");?>      
-                        </div>
-                        <div class="col-md-3">
-                       	  <?php include ("php/big-data.php");?>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>	<!-- row -->
-            </div>	<!-- container -->
-        </div>	<!-- block-content -->
+  					<center>
+                    <?php include ("php/project-management.php");?>
+                    <?php include ("php/time-management.php");?>
+       				<?php include ("php/big-data.php");?>
+                    </center>
+   
+    </div>	
+        <!-- isotope portfolio-items -->
         <center><a href="#contact" class="btn btn-lg btn-view">
                 <i class="fa fa-eye"></i>
                 <span><center>If you're interested </br>contact me!</center></span>
@@ -167,11 +144,11 @@
     </div>	<!-- content-block -->
 
         <div class="content-block" id="contact">
-            <div class="overlay-3">
-                <header class="block-heading cleafix text-center">
-                    <h1>Contact</h1>
-                    <!-- <p>Feel Free to Contact</p> -->
-                </header>
+          <div class="overlay-3">
+            <header class="block-heading cleafix text-center">
+              <h1>Contact</h1>s
+              <!-- <p>Feel Free to Contact</p> -->
+            </header>
                 <div class="block-content text-center">
                     <div class="container">
                         <div class="row">

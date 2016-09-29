@@ -1,4 +1,4 @@
-<a href="#"  data-toggle="modal" data-target="#modal7" class="btn btn-default" role="button"><img src="img/workinprogress-image.jpg" height="175px" alt="workInProgressLogo"/></a>
+<a href="#"  data-toggle="modal" data-target="#modal7" class="btn btn-default" role="button"><img src="img/workinprogress-image.jpg" alt="workInProgressLogo"/></a>
 <div id="modal7" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading7">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">

@@ -359,7 +359,10 @@ body {
 }
 
 .portfolio-item {
-	position: relative;
+	position: inherit;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .portfolio-header {
@@ -412,6 +415,29 @@ body {
 	margin-bottom: 10px;
 	margin-top:10px;
 }
+
+.btn-view-me {
+	border: 1px solid #0D0397;
+	text-transform: uppercase;
+	color: #0D0397;
+	backgroun-color: rgba(32, 178, 170, 0.86);
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	border-radius: 0;
+	font-size: 18px;
+	padding: 16px 48px;
+	margin-bottom: 10px;
+	margin-top:10px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.btn-view-me:hover {
+	color: #fff;
+	border: 1px solid lightseagreen;
+	background-color: #0D0397;
 
 .btn-view:hover {
 	color: #fff;
@@ -575,8 +601,14 @@ ul.numbersList span{
 #testimonials {
     padding: 60px 0;
 }
+ .btn-group {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px; 
+ }
 
-#testimonials .block-heading{
+#testimonials block-heading{
 	margin-bottom: 0px;
 }
 
@@ -585,9 +617,9 @@ ul.numbersList span{
     margin-top: 20px;
 }
 
-#testimonials .block-heading h1
+#testimonials block-heading
 {
-	color: rgb(0, 129, 129);
+	color: #5AAD8F;
 	font-family: 'Milonga', cursive;
 	font-weight: 400;
 	font-size: 55px;

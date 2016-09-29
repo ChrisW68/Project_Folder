@@ -1,4 +1,5 @@
-<a href="#"  data-toggle="modal" data-target="#modal3" class="btn btn-default" role="button"><img src="img/SQL-logo.jpg" height="175" alt="SQLlogo"/></a>
+
+<a href="#"  data-toggle="modal" data-target="#modal3" class="btn btn-default" role="button"><img src="img/SQL-logo.jpg" alt="SQLlogo"/></a>
 <div id="modal3" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading3">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">

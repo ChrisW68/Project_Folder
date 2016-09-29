@@ -1,4 +1,5 @@
-<a href="#"  data-toggle="modal" data-target="#modal6" class="btn btn-default" role="button"><img src="img/JavaScript.png" height="175" alt="JavaScriptlogo"/></a>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<a href="#"  data-toggle="modal" data-target="#modal6" class="btn btn-default" role="button"><img src="img/JavaScript.png" alt="JavaScriptlogo"/></a>
 <div id="modal6" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading6">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">

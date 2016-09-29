@@ -1,4 +1,5 @@
-<a href="#"  data-toggle="modal" data-target="#modal5" class="btn btn-default" role="button"><img src="img/net.png" height="175" alt="MVClogo"/></a>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<a href="#"  data-toggle="modal" data-target="#modal5" class="btn btn-default" role="button"><img src="img/net.png" height="125px" alt="MVClogo"/></a>
 <div id="modal5" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading5">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">

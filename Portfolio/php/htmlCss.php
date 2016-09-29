@@ -1,6 +1,6 @@
 <link href="../css/main.css" rel="stylesheet" type="text/css">
-<a href="#"  data-toggle="modal" data-target="#modal2" class="btn btn-default" role="button"><img src="img/HTMLCSS-logo.jpg" width="75%" alt="HTMLCSSlogo"/></a>
-<div id="modal2" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading2">
+<a href="#"  data-toggle="modal" data-target="#modal1" class="btn btn-default" role="button"><img src="img/HTMLCSS-logo.jpg" alt="HTMLCSSlogo"/></a>
+<div id="modal1" class="modal fade" tabindex="-1" role="dialog" area-label="modalheading2">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
