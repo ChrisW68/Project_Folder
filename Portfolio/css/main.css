@@ -65,6 +65,8 @@ html, body {
 
 h1, h2, h3, h4, h5,h6 {
 	margin-top: 0;
+	color: white;
+	
 }
 
 body {
@@ -100,6 +102,10 @@ body {
   margin-bottom: 35px;
   color: #9F260B;
   text-shadow: -2.5px -2px 3px white;
+}
+
+.softskills {
+	color: white;
 }
 
 .wheretopress {
@@ -244,10 +250,11 @@ body {
 }
 
 .overlay-3 {
-	padding: 60px 0;
+	padding: 20px 0;
 	/* background-color: rgba(9, 20, 39, 0.83); */
 	/* background-color: rgba(24, 77, 77, 0.93); */
-	background-color: rgba(33, 103, 88, 0.9);
+	background-image:url(../img/bg/contact-bg2.jpg);
+	/*background-color: rgba(33, 103, 88, 0.9); */
 }
 
 .overlay {
@@ -600,6 +607,7 @@ ul.numbersList span{
 
 #testimonials {
     padding: 60px 0;
+	color: white;
 }
  .btn-group {
 	padding-left: 20px;
@@ -671,14 +679,18 @@ ul.numbersList span{
 	font-size: 55px;
 }
 
+.contact-header {
+	color: white;
+}
 .contact-info {
     padding: 16px 62px;
+	color: white;
     text-align: left;
     font-size: 18px;
     line-height: 36px;
     margin-top: 25px;
 }
-.
+
 .contact-info i {
     width: 40px;
 	height: 40px;
@@ -762,31 +774,15 @@ input[type="submit"]:hover {
 	color: #fff;
 }
 
-.facebook-icon {
-    padding: 10px 17px;
-    border: 1px solid #44619D;
-    background-color: #44619D;
-}
-
 .github-icon {
     padding: 10px 17px;
-    border: 1px solid #44619D;
+	scale: 200%;
+    border: 10px solid #44619D;
     background-color: #44619D;
 }
 
-.facebook-icon:hover {
-    background-color: transparent;
-    color: #fff;
-}
-
-.twitter-icon {
-	padding: 10px 15px;
-	border: 1px solid #33CCFF;
-	background-color: #33CCFF;
-}
-
-.twitter-icon:hover {
-	background-color: transparent;
+.github-icon:hover {
+	background-color: #1F6054;
 	color: #fff;
 }
 
@@ -824,12 +820,14 @@ input[type="submit"]:hover {
     font-size: 14px;
 }
 
-.copyright {
+.copyrt {
 	text-align: left;
+	color: #306074;
 }
 
 .designed-by {
 	text-align: right;
+	color: white;
 }
 
 .designed-by a {

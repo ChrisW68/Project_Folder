@@ -24,6 +24,7 @@
         <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
+        <link href="css/social-buttons.css" rel="stylesheet" type="text/css">
         <!-- <script src="jQueryAssets/SpryDOMUtils.js" type="text/javascript"></script> -->
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
@@ -65,11 +66,10 @@
                         <center><p class="tagline">Software Developer - Web Developer</p></center>
                         <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Contact Me!</a>
                     </div>  <!-- container -->
-                </div>  <!-- middle -->
-                
-                <div class="bottom text-center">
-                    <a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-                </div>
+                    <div class="bottom text-center">
+                    	<a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
+                	</div>
+                </div>  <!-- middle --> 
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
 
@@ -114,18 +114,13 @@
             <div class="overlay">
               <!-- title -->
               <?php include ("php/about-me.php");?> 
-              <div>
-                <center><a href="#contact" class="btn btn-lg btn-view-me">
-                <i class="fa fa-eye"></i>
-                <span><center>If you're interested</br> contact me!</center></span>
-                </a></center>
-              </div> 
+              
             </div><!-- overlay end -->  
           </div>
     </div><!-- content-block -->
-        <div class="content-block" id="testimonials">
-          <header class="block-heading clearfix">
-              <center><h1>Soft Skills</h1>
+        <div class="content-block text-center" id="portfolio" margin-top="10px">
+            <header class="block-heading cleafix">
+                <h1>Soft Skills</h1>
               <p class="wheretopress">(Press programming logos for more detail)</p></center>
               <!-- <p>Take a look at some of my recent products</p> -->
             </header>
@@ -137,28 +132,27 @@
    
     </div>	
         <!-- isotope portfolio-items -->
-        <center><a href="#contact" class="btn btn-lg btn-view">
+        <center><a href="#contact" class="btn btn-lg btn-view" margin-top="10px;>
                 <i class="fa fa-eye"></i>
                 <span><center>If you're interested </br>contact me!</center></span>
             </a></center>
     </div>	<!-- content-block -->
-
         <div class="content-block" id="contact">
-          <div class="overlay-3">
+          <div class="overlay-3 clearfix">
             <header class="block-heading cleafix text-center">
-              <h1>Contact</h1>s
+              <h1>Contact</h1>
               <!-- <p>Feel Free to Contact</p> -->
             </header>
                 <div class="block-content text-center">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 wow animated fadeInLeft">
-                                <form class="contact-form" action="form.php">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                    <input type="email" name="email" placeholder="Email" required>
-                                    <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
-                                    <input type="submit" value="Submit">
-                                </form>
+                              <form class="contact-form" action="form.php">
+                              <input type="text" name="name" placeholder="Name" required>
+                              <input type="email" name="email" placeholder="Email" required>
+                              <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
+                              <input type="submit" value="Submit">
+                              </form>
                             </div>
                             <div class="col-md-6 wow animated fadeInRight">
                                 <div class="row">
@@ -192,10 +186,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <ul class="social-box">
-                                        <li><a class="github-icon" href="https://github.com/ChrisW68"><i class="fa fa-github"></i></a></li>
-                                        <li><a class="linkedin-icon" href="https://www.linkedin.com/in/mrwiseman"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
+                                    <a class="btn btn-github" href="https://github.com/ChrisW68"><i class="fa fa-github"></i> - See what I have been doing!</a>
+                                    <a class="btn btn-linkedin" href="https://www.linkedin.com/in/mrwiseman"><i class="fa fa-linkedin"></i> - Click! To find more about me</a>  
                                 </div>
                             </div>
                         </div>
@@ -207,11 +199,15 @@
         <footer id="site-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">&copy; 2014 Developer</div>
+                    <div class="col-sm-4">
+                        <a href="http://themewagon.com/" target="_blank"> &copy; 2014 Developer</a>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="designed-by">Designed By <a href="http://themewagon.com/" target="_blank">ThemeWagon</a></div>
+                    <div class="col-sm-4" >
+                    <a href="http://themewagon.com/" target="_blank" >Initial Design Created By: ThemeWagon </a>
+                    </div>
+                    	<div class="col-sm-4">
+                        <a href="http://themewagon.com/" target="_blank" >Design Modified By: C. Wiseman</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
