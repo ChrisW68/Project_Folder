@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -27,7 +28,7 @@
         <link href="css/social-buttons.css" rel="stylesheet" type="text/css">
         <!-- <script src="jQueryAssets/SpryDOMUtils.js" type="text/javascript"></script> -->
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript"></script>
+    	<script src="index.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="content-block" id="header">
@@ -146,16 +147,10 @@
                 <div class="block-content text-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 wow animated fadeInLeft">
-                              <form class="contact-form" action="form.php">
-                              <input type="text" name="name" placeholder="Name" required>
-                              <input type="email" name="email" placeholder="Email" required>
-                              <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
-                              <input type="submit" value="Submit">
-                              </form>
-                            </div>
-                            <div class="col-md-6 wow animated fadeInRight">
-                                <div class="row">
+                        <?php include ("php/contact.php");?>
+                        	
+<div class="col-md-6 wow animated fadeInRight">
+              <div class="row">
                                     <div class="col-md-12">
                                         <div class="contact-info">
                                             <div class="clearfix">
