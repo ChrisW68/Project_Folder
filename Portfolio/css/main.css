@@ -22,10 +22,8 @@ Text Domain: developer
 * 06.0 - Latest Works
 * 	 06.1 - isotope (http://isotope.metafizzy.co/)
 *	 06.2 - Image Hover Effect
-* 07.0 - More About Me
-* 	 07.1 - Animated Number
+* 07.0 - Modal
 * 08.0 - Testimonials
-* 	 08.1 - Owl Carousel (http://owlgraphic.com/owlcarousel/)
 * 09.0 - Contact
 *	 09.1 - Social Icon
 * 10.0 - Footer
@@ -85,7 +83,7 @@ body {
 
 .btn:focus
 {
-	color: #fff;
+	color:#050506;
 }
 
 .block-heading {
@@ -173,9 +171,9 @@ body {
   border-radius: 120%;
   border: 2px ridge #0E1015;
   box-shadow: 0 3px 30px grey inset;
-  width: 300px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  width: 20%;
+  margin-top: 7%;
+  margin-bottom: 2%;
   -webkit-animation:spin 3s linear infinite;
     -moz-animation:spin 3s linear infinite;
     animation:spin 3s linear infinite;
@@ -271,7 +269,7 @@ body {
 	padding-bottom: 10px;
 }
 .fill-height{
-	margin-top: 30px;
+	margin-top: 2%;
 	height: 60%;
 }
 
@@ -311,7 +309,6 @@ body {
 }
 
 .bottom a {
-	color: #fff;
 	display: inline-block;
 	position: relative;
 	top: 0px;
@@ -319,7 +316,7 @@ body {
 
 .btn-hire {
 	text-transform: uppercase;
-	color: #373033;
+	text-shadow:#000000;
 	border: 1px solid rgb(136, 138, 145);
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 300;
@@ -328,14 +325,18 @@ body {
 	box-shadow: 0 3px 1px 0 rgba(20, 20, 26, 0.55);
 	border-radius: 2px;
 	font-size: 18px;
+	size: 75%;
 	background-color: rgba(247, 255, 248, 1);
-	padding: 10px 10px;
+	margin-top: 75%;
+	margin-bottom: 2px;
+	padding: .75% .75%;
 }
 
 .btn-hire:hover {
-	color: #fff;
-	border: 1px solid #878A91;
-	background-color: rgba(32, 36, 47, 0.94);
+	color: rgba(32, 178, 170, 0.86);
+	border: 1px solid lightseagreen;
+	opacity:.25%;
+	background-color: black;
 }
 
 /*////////////////////////////////////////////////////////////////////////
@@ -507,6 +508,11 @@ body {
 	font-size: 22px;
 }
 
+/* ///////////////////////////////////////////////////////////////////// 
+//  07 - Modal
+/////////////////////////////////////////////////////////////////////*/
+
+
 .modal-dialog,
 .modal-content {
     /* 80% of window height */
@@ -523,29 +529,9 @@ body {
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  07 - More About Me 
+//  08 - More About Me 
 /////////////////////////////////////////////////////////////////////*/
 
-/* #services {
-	background: url(../img/bg/bg-2.jpg) no-repeat center center fixed;
-	background-size: cover;
-	color: #fff;
-}
-
-.pro-stat {
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
-	font-style: italic;
-}
-
-.proj-name {
-	font-family: Pacifico;
-	font-size: 150px;
-	text-align: center;
-	line-height: 90%;
-	margin-bottom: 80px;
-} */
 #services .block-heading h1 {
     color: #fff;
 	
@@ -554,49 +540,6 @@ body {
 	
     font-size: 55px;
 	word-spacing: 5px;
-}
-
-
-/* ============================  animated  numbers   ==================================*/
-
-.parallax{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-}
-
-#numbers
-{
-	background: url(../img/bg/number1.gif) repeat center center fixed;
-}
-#numbers .overlay{
-    padding: 60px 0px 80px 0px;
-}
-ul.numbersList {
-    margin: 0px auto;
-    padding: 0px;
-    overflow: hidden;
-    list-style: none;
-    text-align: center;
-}
-ul.numbersList li{
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-ul.numbersList li:last-child{
-    border: none;
-}
-ul.numbersList h4{
-    color: rgb(234, 234, 234);
-    margin-bottom: 58px;
-}
-ul.numbersList span{
-    font-size: 62px;
-    font-weight: 700;
-}
-
-.numbers-title {
-    padding: 10px 0;
-    position: relative;
 }
 
 
@@ -640,24 +583,6 @@ ul.numbersList span{
 #testimonials .testimonial > img {
 	border-radius: 100%;
 	margin-bottom: 15px;
-}
-
-/* ///////////////////////////////////////////////////////////////////// 
-//  08 - Testimonials > Owl Carousel
-/////////////////////////////////////////////////////////////////////*/
-
-.owl-carousel {
-	z-index: 0;
-}
-
-.owl-carousel .owl-item img {
-	display: inline-block;
-	width: inherit;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-    background: none;
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
@@ -773,7 +698,7 @@ input[type="submit"]:hover {
 
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  09 - contact > Social
+//  10 - contact > Social
 /////////////////////////////////////////////////////////////////////*/
 
 .social-box {
@@ -827,7 +752,7 @@ input[type="submit"]:hover {
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  10 - Footer
+//  11 - Footer
 /////////////////////////////////////////////////////////////////////*/
 
 #site-footer {
@@ -887,7 +812,7 @@ i.fa.fa-envelope-o {
 	margin-top: -22px;
 }
 /* ///////////////////////////////////////////////////////////////////// 
-//  11 - Responsive styles
+//  12 - Responsive styles
 /////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 991px) {

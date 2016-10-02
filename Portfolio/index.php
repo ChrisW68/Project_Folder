@@ -63,13 +63,14 @@
                 <div class="middle text-center clearfix">
                     <div class="container-fluid fill-height">
                    	  <center><img src="img/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
-                        <center><h1 class="name">Chris Wiseman</h1></center>
+                        <h1 class="name" align="center">Chris Wiseman</h1>
                         <center><p class="tagline">Software Developer - Web Developer</p></center>
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Contact Me!</a>
+                        
                     </div>  <!-- container -->
-                    <div class="bottom text-center">
-                    	<a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-                	</div>
+                    <div>    
+                    <!-- Contact me button.  Placed it in a PHP file to use throughout webpages if needed.-->                    	
+                    <?php include ("php/contactme1.php");?>
+                    </div>
                 </div>  <!-- middle --> 
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
@@ -105,10 +106,8 @@
                 </div>
               </div>
             </div>	<!-- isotope portfolio-items -->
-            <center><a href="#contact" class="btn btn-lg btn-view">
-                <i class="fa fa-eye"></i>
-                <span><center>If you're interested</br> contact me!</center></span>
-            </a></center>
+            <!-- Contact button that is used throughout website.  Made a PHP file to reduce/reuse code-->
+            <?php include ("php/contactbutton.php");?>
         </div>  <!-- content-block -->
         <div id="services" class="content-block">
           <div id="numbers" class="parallax">
@@ -132,11 +131,10 @@
                     </center>
    
     </div>	
+    <div>
         <!-- isotope portfolio-items -->
-        <center><a href="#contact" class="btn btn-lg btn-view" margin-top="10px;>
-                <i class="fa fa-eye"></i>
-                <span><center>If you're interested </br>contact me!</center></span>
-            </a></center>
+        <!-- Button control that is used throughout website. -->
+            <?php include ("php/contactbutton.php");?>
     </div>	<!-- content-block -->
         <div class="content-block" id="contact">
           <div class="overlay-3 clearfix">
