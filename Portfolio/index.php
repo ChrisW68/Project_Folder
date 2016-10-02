@@ -142,15 +142,16 @@
           <div class="overlay-3 clearfix">
             <header class="block-heading cleafix text-center">
               <h1>Contact</h1>
-              <!-- <p>Feel Free to Contact</p> -->
             </header>
                 <div class="block-content text-center">
                     <div class="container">
                         <div class="row">
                         <?php include ("php/contact.php");?>
+                        <div class-"col-md-4"><br>
+						</div>
                         	
-<div class="col-md-6 wow animated fadeInRight">
-              <div class="row">
+							<div class="col-md-4 wow animated fadeInRight col-lg-offset-1" "align="center">
+              					<div class="row">
                                     <div class="col-md-12">
                                         <div class="contact-info">
                                             <div class="clearfix">

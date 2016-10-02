@@ -252,9 +252,8 @@ body {
 .overlay-3 {
 	padding: 20px 0;
 	/* background-color: rgba(9, 20, 39, 0.83); */
-	/* background-color: rgba(24, 77, 77, 0.93); */
-	background-image:url(../img/bg/contact-bg2.jpg);
-	/*background-color: rgba(33, 103, 88, 0.9); */
+	background-color: #5AAD8F; 
+	/*background-image:url(../img/bg/contact-bg2.jpg); */
 }
 
 .overlay {
@@ -665,13 +664,26 @@ ul.numbersList span{
 //  09 - Contact
 /////////////////////////////////////////////////////////////////////*/
 
-#contact {
-	background: url(../img/bg/contact-bg.jpg) no-repeat center center fixed;
-	background-size: cover;
-	color: #fff;
+#contactme p, h1{
+	text-align:center;
 }
 
-#contact .block-heading h1
+#contactme .btn-secondary {
+	padding: 4px, 30px;
+	margin: 5px;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	transition:0.3s;
+}
+
+#contactme .btn-secondary:hover {
+	color: #fff;
+	background: #081F3D;
+	transition:0.3s;
+}
+	
+
+#contact #contactme .block-heading h1
 {
 	color: #fff;
 	font-family: 'Milonga', cursive;
@@ -752,6 +764,12 @@ input[type="submit"]:hover {
 :-ms-input-placeholder {  
    color: #fff;  
 }
+
+.thankyoumessage {
+	background-color:green;
+}
+
+
 
 
 /* ///////////////////////////////////////////////////////////////////// 
