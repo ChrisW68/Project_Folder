@@ -21,5 +21,9 @@ namespace SalesApp.Models
         [Required]
         [StringLength(5)]
         public string Code { get; set; }
+
+        public virtual ObservableListSource<SalesPerson> People { get; set; }
+
+        public virtual ObservableListSource<Sales> Sales { get; set; }
     }
 }
