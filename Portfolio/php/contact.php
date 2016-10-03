@@ -41,11 +41,11 @@ if ($_POST['submit']) {
   
   <form method="post" role="form">
     <div class="form-group">
-        <div class="form-group">
+        <div class="col-lg-6 form-group" align="left">
             <input type="text" name="name" class="form-control" placeholder="Your name" value="<?php echo $_POST['name']; ?>">
         </div>
-        <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Your email" value="<?php echo $_POST['email']; ?>">>
+        <div class="col-lg-6 form-group" align="left">
+            <input type="email" name="email" class="form-control" placeholder="Your email" value="<?php echo $_POST['email']; ?>">
         </div>
         <div class="form-group">
           <textarea name="message" rows="4" class="form-control" placeholder="message .. "><?php echo $_POST['message']; ?></textarea>
