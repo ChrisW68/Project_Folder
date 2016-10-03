@@ -33,9 +33,9 @@
     <body>
         <div class="content-block" id="header">
             <div id="overlay-1">
-                <header id="site-header" class="clearfix">
+                <header id="site-header" class="img-responsive clearfix">
                     <div class="pull-left">
-                        <h1 class="talent pulse">Software Developer - Web Developer - Software Designer</h1>
+                        <h1 class="img-responsive pulse">Software Developer - Web Developer - Software Designer</h1>
                     </div>
                     <div class="pull-right">
                         <nav class="navbar site-nav" role="navigation">

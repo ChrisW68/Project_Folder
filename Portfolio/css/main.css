@@ -116,8 +116,29 @@ body {
   text-align: center;
 }
 
-.talent {
+/*.talent {
   margin-top: 50px;
+} */
+
+
+@media screen and (max-width: 992px) {
+	.name{
+		font-size: 200%;
+	}
+	#site-header {
+		size: 25%;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {
+	.name{
+		font-size: 175%;
+	}
+	#site-header {
+		size: 25%;
+	}
+	
 }
 
 .figCaption {
