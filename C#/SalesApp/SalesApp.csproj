@@ -99,6 +99,10 @@
     <Compile Include="Migrations\201610050122172_Initial.Designer.cs">
       <DependentUpon>201610050122172_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610050440292_SalesTargets.cs" />
+    <Compile Include="Migrations\201610050440292_SalesTargets.Designer.cs">
+      <DependentUpon>201610050440292_SalesTargets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\ObservableListSource.cs" />
@@ -112,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610050122172_Initial.resx">
       <DependentUpon>201610050122172_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610050440292_SalesTargets.resx">
+      <DependentUpon>201610050440292_SalesTargets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

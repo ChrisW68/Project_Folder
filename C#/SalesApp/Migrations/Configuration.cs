@@ -1,5 +1,6 @@
 namespace SalesApp.Migrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +27,36 @@ namespace SalesApp.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Regions.AddOrUpdate(
+                p => p.ID,
+                new SalesRegion
+                {
+                    Active = true,
+                    Code = "NTH",
+                    CreatedBy = "Admin",
+                    CreatedDate = DateTime.Now,
+                    ID = 1,
+                    Name = "North Region",
+                    SalesTarget = 1000.00M,
+                    UpdatedBy = "Admin",
+                    UpdatedDate = DateTime.Now
+
+                },
+                new SalesRegion
+                {
+                    Active = true,
+                    Code = "STH",
+                    CreatedBy = "Admin",
+                    CreatedDate = DateTime.Now,
+                    ID = 2,
+                    Name = "South Region",
+                    SalesTarget = 1000.00M,
+                    UpdatedBy = "Admin",
+                    UpdatedDate = DateTime.Now
+                }
+                
+                );
         }
     }
 }

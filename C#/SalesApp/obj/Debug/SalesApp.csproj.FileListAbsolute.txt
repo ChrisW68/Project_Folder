@@ -27,3 +27,4 @@ C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\bin\Debug\Sy
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.exe
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.pdb
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Migrations.Initial.resources
+C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Migrations.SalesTargets.resources
