@@ -42,12 +42,34 @@ namespace SalesApp
                  * Step 2: Order them by name
                  * Step 3: Convert the sales person full name to a list 
                  * and bind to binding source*/
-                salesPersonBindingSource.DataSource = context.Regions
+                salesRegionBindingSource.DataSource = context.Regions
                     .Where(e => e.Active)
                     .OrderBy(e => e.Name)
                     .ToList();
             }
 
+        }
+
+        private void refreshSalesButton_Click(object sender, EventArgs e)
+        {
+            var personId = (int)peopleComboBox.SelectedValue;
+            var regionId = (int)peopleComboBox.SelectedValue;
+
+
+            /* Step 1: Select the sales by the currently selected person 
+             * Step 2: Then by current selected date
+             * Step 3: Order them by Date
+             * Step 4: Convert the person and region to a list by date
+             * and bind to binding source
+             * */
+            using (var context = new SalesContext())
+            {
+                saleBindingSource.DataSource = context.Sales
+                    .Where(s => s.PersonId == personId &&
+                                s.RegionId == regionId)
+                    .OrderBy(s => s.Date)
+                    .ToList();
+            }
         }
     }
 }

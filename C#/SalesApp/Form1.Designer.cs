@@ -37,10 +37,10 @@
             this.salesRegionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.refreshSalesButton = new System.Windows.Forms.Button();
             this.salesdataGridView1 = new System.Windows.Forms.DataGridView();
-            this.saleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updatedByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.salesPersonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesRegionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesdataGridView1)).BeginInit();
@@ -87,6 +87,7 @@
             this.refreshSalesButton.TabIndex = 2;
             this.refreshSalesButton.Text = "Refresh";
             this.refreshSalesButton.UseVisualStyleBackColor = true;
+            this.refreshSalesButton.Click += new System.EventHandler(this.refreshSalesButton_Click);
             // 
             // salesdataGridView1
             // 
@@ -105,10 +106,6 @@
             this.salesdataGridView1.RowTemplate.Height = 24;
             this.salesdataGridView1.Size = new System.Drawing.Size(484, 342);
             this.salesdataGridView1.TabIndex = 3;
-            // 
-            // saleBindingSource
-            // 
-            this.saleBindingSource.DataSource = typeof(SalesApp.Models.Sale);
             // 
             // amountDataGridViewTextBoxColumn
             // 
@@ -136,6 +133,10 @@
             this.updatedByDataGridViewTextBoxColumn.HeaderText = "Updated By";
             this.updatedByDataGridViewTextBoxColumn.Name = "updatedByDataGridViewTextBoxColumn";
             this.updatedByDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // saleBindingSource
+            // 
+            this.saleBindingSource.DataSource = typeof(SalesApp.Models.Sale);
             // 
             // Form1
             // 
