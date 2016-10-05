@@ -26,5 +26,7 @@ namespace SalesApp.Models
 
         [Required]
         public int RegionId { get; set; }
+
+        public virtual ObservableListSource<Sale> Sales { get; set; }
     }
 }

@@ -19,7 +19,6 @@ namespace SalesApp.Models
         public string CreatedBy { get; set; }
 
         [Required]
-        [StringLength(30)]
         public DateTime CreatedDate { get; set; }
 
         [Required]
@@ -27,7 +26,6 @@ namespace SalesApp.Models
         public string UpdatedBy { get; set; }
 
         [Required]
-        [StringLength(30)]
         public DateTime UpdatedDate { get; set; }
     }
 }

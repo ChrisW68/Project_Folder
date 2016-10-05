@@ -24,6 +24,6 @@ namespace SalesApp.Models
 
         public virtual ObservableListSource<SalesPerson> People { get; set; }
 
-        public virtual ObservableListSource<Sales> Sales { get; set; }
+        public virtual ObservableListSource<Sale> Sales { get; set; }
     }
 }
