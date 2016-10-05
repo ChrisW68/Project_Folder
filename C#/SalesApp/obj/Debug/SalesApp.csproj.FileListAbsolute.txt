@@ -1,5 +1,4 @@
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\bin\Debug\SalesApp.exe.config
-C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.csprojResolveAssemblyReference.cache
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Form1.resources
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Properties.Resources.resources
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.csproj.GenerateResource.Cache

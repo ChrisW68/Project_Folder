@@ -41,7 +41,6 @@ namespace SalesApp.Migrations
                     SalesTarget = 1000.00M,
                     UpdatedBy = "Admin",
                     UpdatedDate = DateTime.Now
-
                 },
                 new SalesRegion
                 {
@@ -56,7 +55,38 @@ namespace SalesApp.Migrations
                     UpdatedDate = DateTime.Now
                 }
                 
-                );
+             );
+
+            context.People.AddOrUpdate(
+                p => p.ID,
+                new SalesPerson
+                {
+                    Active = true,
+                    CreatedBy = "Admin",
+                    CreatedDate = DateTime.Now,
+                    FirstName = "Bob",
+                    ID = 1,
+                    LastName = "Smith",
+                    RegionId = 1,
+                    SalesTarget = 3000.00M,
+                    UpdatedBy = "Admin",
+                    UpdatedDate = DateTime.Now
+                });
+
+            context.Sales.AddOrUpdate(
+                p => p.ID,
+                new Sale
+                {
+                    Amount = 321.50M,
+                    CreatedBy = "Admin",
+                    CreatedDate = DateTime.Now,
+                    Date = new DateTime(2016, 2, 28),
+                    ID = 1,
+                    PersonId = 1,
+                    RegionId = 1,
+                    UpdatedBy = "Admin",
+                    UpdatedDate = DateTime.Now
+                });
         }
     }
 }

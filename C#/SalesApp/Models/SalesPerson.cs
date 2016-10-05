@@ -31,5 +31,14 @@ namespace SalesApp.Models
 
         [Range(0, double.MaxValue)]
         public decimal SalesTarget { get; set; }
+
+        /* This will retrieve full name */
+        public string FullName
+        {
+            get
+            {
+                return string.Format("{0} {1}", FirstName, LastName).Trim();
+            }
+        }
     }
 }
