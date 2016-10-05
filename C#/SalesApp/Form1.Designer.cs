@@ -41,6 +41,7 @@
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updatedByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.salesTargetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.salesPersonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesRegionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesdataGridView1)).BeginInit();
@@ -53,9 +54,9 @@
             this.peopleComboBox.DisplayMember = "FullName";
             this.peopleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.peopleComboBox.FormattingEnabled = true;
-            this.peopleComboBox.Location = new System.Drawing.Point(12, 12);
+            this.peopleComboBox.Location = new System.Drawing.Point(98, 13);
             this.peopleComboBox.Name = "peopleComboBox";
-            this.peopleComboBox.Size = new System.Drawing.Size(238, 24);
+            this.peopleComboBox.Size = new System.Drawing.Size(205, 24);
             this.peopleComboBox.TabIndex = 0;
             this.peopleComboBox.ValueMember = "ID";
             // 
@@ -69,7 +70,7 @@
             this.regioncomboBox.DisplayMember = "Name";
             this.regioncomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regioncomboBox.FormattingEnabled = true;
-            this.regioncomboBox.Location = new System.Drawing.Point(280, 12);
+            this.regioncomboBox.Location = new System.Drawing.Point(309, 13);
             this.regioncomboBox.Name = "regioncomboBox";
             this.regioncomboBox.Size = new System.Drawing.Size(216, 24);
             this.regioncomboBox.TabIndex = 1;
@@ -138,11 +139,22 @@
             // 
             this.saleBindingSource.DataSource = typeof(SalesApp.Models.Sale);
             // 
+            // salesTargetButton
+            // 
+            this.salesTargetButton.Location = new System.Drawing.Point(12, 5);
+            this.salesTargetButton.Name = "salesTargetButton";
+            this.salesTargetButton.Size = new System.Drawing.Size(75, 46);
+            this.salesTargetButton.TabIndex = 4;
+            this.salesTargetButton.Text = "target";
+            this.salesTargetButton.UseVisualStyleBackColor = true;
+            this.salesTargetButton.Click += new System.EventHandler(this.salesTargetButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(627, 412);
+            this.Controls.Add(this.salesTargetButton);
             this.Controls.Add(this.salesdataGridView1);
             this.Controls.Add(this.refreshSalesButton);
             this.Controls.Add(this.regioncomboBox);
@@ -170,6 +182,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn updatedByDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button salesTargetButton;
     }
 }
 

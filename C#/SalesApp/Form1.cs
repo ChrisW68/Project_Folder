@@ -71,5 +71,30 @@ namespace SalesApp
                     .ToList();
             }
         }
+
+
+        /* This will pull out the information of the sales person full name
+         * and sales person target when the Target button is pressed*/
+        private void salesTargetButton_Click(object sender, EventArgs e)
+        {
+            var personId = (int)peopleComboBox.SelectedValue;
+
+            using (var context = new SalesContext())
+            {
+                /* Will pull a single person out of database if person does not exist
+                 * it will return a null value */
+                var person = context.People.SingleOrDefault(p => p.ID == personId);
+
+                /* If person is null not equal to no a message box will be displayed
+                 * states the persons fullname and the sales target */
+                if (person != null)
+                {
+                    MessageBox.Show(string.Format("{0} has a sales target of {1:C}",
+                        person.FullName,
+                        person.SalesTarget));
+                }
+
+            }
+        }
     }
 }
