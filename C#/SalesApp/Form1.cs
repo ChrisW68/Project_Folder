@@ -1,4 +1,5 @@
 ﻿using SalesApp.Data;
+using SalesApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,6 +53,12 @@ namespace SalesApp
 
         private void refreshSalesButton_Click(object sender, EventArgs e)
         {
+            GetSales();
+
+        }
+
+        private void GetSales()
+        { 
             var personId = (int)peopleComboBox.SelectedValue;
             var regionId = (int)peopleComboBox.SelectedValue;
 
@@ -62,6 +69,7 @@ namespace SalesApp
              * Step 4: Convert the person and region to a list by date
              * and bind to binding source
              * */
+
             using (var context = new SalesContext())
             {
                 saleBindingSource.DataSource = context.Sales
@@ -71,6 +79,7 @@ namespace SalesApp
                     .ToList();
             }
         }
+
 
 
         /* This will pull out the information of the sales person full name
@@ -94,6 +103,87 @@ namespace SalesApp
                         person.SalesTarget));
                 }
 
+            }
+        }
+
+        private void NewSaleButton_Click(object sender, EventArgs e)
+        {
+            var personId = (int)peopleComboBox.SelectedValue;
+            var regionId = (int)peopleComboBox.SelectedValue;
+            
+            /* Step 1: Creates new model
+             * Step 2: Populate with data information
+             * */
+            var sale = new Sale
+            {
+                Amount = newAmountNumericUpDown.Value,
+                Date = newDateTimePicker.Value,
+                PersonId = personId,
+                RegionId = regionId
+            };
+
+            /* Create new context and add model to dbset */
+            using (var context = new SalesContext())
+            {
+                context.Sales.Add(sale);
+                var result = context.SaveChanges();
+
+                MessageBox.Show(string.Format("{0} sales created.", result));
+                GetSales();
+            }
+
+        }
+
+        private void salesdataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1)
+            {
+                var salesId = (int)salesdataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                var amount = (decimal)salesdataGridView1.Rows[e.RowIndex].Cells[1].Value;
+
+                using (var context = new SalesContext())
+                {
+                    /* Will pull a single person out of database if person does not exist
+                     * it will return a null value */
+                    var sale = context.Sales.SingleOrDefault(p => p.ID == salesId);
+
+                    /* If sale is null not equal */
+                    if (sale != null)
+                    {
+                        sale.Amount = amount;
+                        var result = context.SaveChanges();
+
+                        MessageBox.Show(string.Format("{0} sales created.", result));
+                        GetSales();
+                    }
+                }
+            }
+        }
+
+        private void salesdataGridView1_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delte the sale?", "Delete",
+                MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            var salesId = (int)e.Row.Cells[0].Value;
+
+            using (var context = new SalesContext())
+            {
+                /* Will pull a single person out of database if person does not exist
+                 * it will return a null value */
+                var sale = context.Sales.SingleOrDefault(p => p.ID == salesId);
+
+                /* If sale is null not equal */
+                if (sale != null)
+                {
+                    context.Sales.Remove(sale);
+                    var result = context.SaveChanges();
+
+                    MessageBox.Show(string.Format("{0} sales deleted.", result));
+                }
             }
         }
     }

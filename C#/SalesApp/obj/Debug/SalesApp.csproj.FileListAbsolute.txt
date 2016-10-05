@@ -27,3 +27,4 @@ C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\Sa
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.pdb
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Migrations.Initial.resources
 C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.Migrations.SalesTargets.resources
+C:\Users\chris\OneDrive\Documents\GitHub\Project_Folder\C#\SalesApp\obj\Debug\SalesApp.csprojResolveAssemblyReference.cache
