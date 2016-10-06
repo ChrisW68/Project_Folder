@@ -60,27 +60,14 @@ html, body {
 
 h1, h2, h3, h4, h5,h6 {
 	margin-top: 0;
-	color: white;
+
 }
 
 body {
 	font: 15px/23px "Lucida Sans","Liberation Sans","Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
-	background-color: rgba(27,46,52,1.00);
+	background-color: rgba(245,245,245,1.00);
+	/*background-color: rgba(27,46,52,1.00); */
 
-}
-
-.btn {
-	transition: 0.4s background linear;
-}
-
-.btn-primary {
-	margin-top: 60px;	
-}
-
-.btn:focus
-{
-	color:#050506;
-	background-color:black;
 }
 
 .block-heading {
@@ -147,6 +134,14 @@ body {
 	animation-name: pulse_animation;
 	animation-duration: 2000ms;
 	transform-origin:50% 5%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.pulseeye {
+	animation-name: pulse_animation;
+	animation-duration: 3000ms;
+	transform-origin:3.5% 3%;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
@@ -273,6 +268,7 @@ body {
 .tagline {
 	font-size: 150%;
 	margin-bottom: 25px;
+	background-color: #94979E transparent;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -286,7 +282,7 @@ body {
 .bottom {
 	position: absolute;
 	width: 100%;
-	bottom: 4%;
+	bottom: 2%;
 }
 
 .btn-hire {
@@ -400,8 +396,7 @@ body {
 .btn-view-me {
 	border: 1px solid #0D0397;
 	text-transform: uppercase;
-	color: #0D0397;
-	background-color: rgba(32, 178, 170, 0.86);
+	background-color: rgba(32, 17s8, 170, 0.86);
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 300;
 	word-spacing: 5px;
@@ -417,15 +412,41 @@ body {
 .btn-view-me:hover {
 	color: #fff;
 	border: 1px solid lightseagreen;
-	background-color: #0D0397;
-
+	background-color: rgba(32, 178, 170, 0.86);
+}
 .btn-view:hover {
 	color: #fff;
 	border: 1px solid lightseagreen;
 	background-color: rgba(32, 178, 170, 0.86);
 }
 
+.btn {
+	transition: 0.4s background linear;
+	color:green;
+	background-color:white;
+	border-color: #366D59;
+	align:center;
+}
 
+.btn-primary {
+		
+}
+
+.btn:focus
+{
+
+}
+
+.btn-primary:hover {
+	color: #fff;
+	border: 1px solid lightseagreen;
+	background-color: rgba(32, 178, 170, 0.86);
+}
+.btn:hover {
+	color: #fff;
+	border: 1px solid lightseagreen;
+	background-color: rgba(32, 178, 170, 0.86);
+}
 /* ==============================  Image hover effect ============================== */
 
 
@@ -497,11 +518,11 @@ body {
     max-height: calc(75% - 300px);
 }
 
-.btn-php {
-	background-image:url(../img/PHP-logo.jpg);
+.modal-content div a {
 }
 
-.modal-content div a {
+modal-footer {
+	margin-bottom: 25px;
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
@@ -569,6 +590,11 @@ body {
 	text-align:center;
 }
 
+btncontact {
+	color: blacks;
+	background: white;
+}
+
 #contactme .btn-secondary {
 	padding: 4px, 30px;
 	margin: 5px;
@@ -630,9 +656,10 @@ input[type="text"],
 input[type="email"],
 textarea {
 	display: block;
+	color: black;
 	margin: 0 auto;
 	width: 100%;
-	background: transparent;
+	background: white;
 	border: 1px solid #fff;
 	padding: 12px 15px;
 	margin-bottom: 30px;

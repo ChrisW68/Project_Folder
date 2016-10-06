@@ -35,7 +35,7 @@
             <div id="overlay-1">
                 <header id="site-header" class="img-responsive clearfix">
                     <div class="pull-left">
-                        <h1 class="img-responsive pulse">Software Developer - Web Developer - Software Designer</h1>
+                        <h1 class="img-responsive">Software Developer - Web Developer - Software Designer</h1>
                     </div>
                     <div class="pull-right">
                         <nav class="navbar site-nav" role="navigation">
@@ -64,18 +64,19 @@
                     <div class="container-fluid fill-height">
                    	  <center><img src="img/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
                         <h1 class="name" align="center">Chris Wiseman</h1>
-                        <center><p class="tagline">Software Developer - Web Developer</p></center>
+                        <center><h4 class="tagline">Software Developer - Web Developer</h4></center>
                         
                     </div>  <!-- container -->
-                    <div>    
+                    
+                </div>  <!-- middle -->
+                <div>    
                     <!-- Contact me button.  Placed it in a PHP file to use throughout webpages if needed.-->                    	
-                    <?php include ("php/contactme1.php");?>
-                    </div>
-                </div>  <!-- middle --> 
+                   
+                </div> 
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
 
-        <div class="content-block text-center" id="portfolio">
+        <div class="content-block text-center" id="developmentskills">
             <header class="block-heading cleafix">
                 <h1>Development Skills</h1>
                 <p class="wheretopress">(Press programming logos for more detail)</p>
@@ -106,19 +107,16 @@
                 </div>
               </div>
             </div>	<!-- isotope portfolio-items -->
-            <!-- Contact button that is used throughout website.  Made a PHP file to reduce/reuse code-->
-            <?php include ("php/contactbutton.php");?>
+            <!-- Pulse arrow down to next section button that pulsates-->
+            <center><a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse" align="center"></i></a></center>
+         
         </div>  <!-- content-block -->
-        <div id="services" class="content-block">
+        <div id="aboutme" class="content-block">
           <div id="numbers" class="parallax">
-            <div class="overlay">
-              <!-- title -->
               <?php include ("php/about-me.php");?> 
-              
-            </div><!-- overlay end -->  
           </div>
-    </div><!-- content-block -->
-        <div class="content-block text-center" id="portfolio" margin-top="10px">
+    	</div><!-- content-block -->
+        <div class="content-block text-center" id="softskills" margin-top="10px">
             <header class="block-heading cleafix">
                 <h1>Soft Skills</h1>
               <p class="wheretopress">(Press programming logos for more detail)</p></center>
@@ -132,9 +130,8 @@
    
     </div>	
     <div>
-        <!-- isotope portfolio-items -->
         <!-- Button control that is used throughout website. -->
-            <?php include ("php/contactbutton.php");?>
+    	<?php include ("php/contactme1.php");?>
     </div>	<!-- content-block -->
         <div class="content-block" id="contact">
           <div class="overlay-3 clearfix">

@@ -1,5 +1,8 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="../css/main.css" rel="stylesheet" type="text/css">
-<center><a href="#contact" class="btn btn-lg btn-view">
-    <i class="fa fa-eye"></i>
-    <span><center>If you're interested</br> contact me!</center></span>
-</a></center>
+
+</center>
+<button type="button" class="btn btn-lg btn-default">Contact me!</button>
+

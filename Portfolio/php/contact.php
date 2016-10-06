@@ -56,7 +56,7 @@ if ($_POST['submit']) {
           </label>
         </div>
         <div align="center">
-            <input type="submit" name="submit" class="btn btn-secondary" value="send message"/>
+            <input type="submit" name="submit" class="btn-contact btn-secondary" value="send message"/>
         </div>
     </div>
   </form>
