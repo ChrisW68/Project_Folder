@@ -8,7 +8,7 @@
     var app = angular.module('myCalculator',[]);
     
     app.controller('CalculatorController',['$scope',function($scope){
-        $scope.lumen_options = [375, 600, 900, 1125, 1600];   
+        $scope.lumen_options = [25, 100, 200, 350, 450, 600, 800, 1100, 1600, 2600];   
         $scope.current_lumens = 600;
         $scope.current_cost = 12;
         $scope.current_hours = 3;
@@ -28,19 +28,19 @@
             $scope.cfl_wattage = ($scope.current_lumens * $scope.cfl_conversion).toFixed(1);
             $scope.led_wattage = ($scope.current_lumens * $scope.led_conversion).toFixed(1);
             
-            if( $scope.current_hours > 24 ){$scope.curret_hours=24; }
+           if( $scope.current_hours > 24 ){$scope.curret_hours = 24; }
             
-            /*-- Total hours equal total days multiply by currrent hours --*/
-            var total_hours = $scope.total_days * $scope.current_hours;
+                /*-- Total hours equal total days multiply by currrent hours --*/
+                var total_hours = $scope.total_days * $scope.current_hours;
             
-            /*-- cost in pennies -- */
-            var cost = $scope.current_cost / 100;
-            
-            
-            $scope.inc_cost = ((($scope.inc_wattage * total_hours) / 1000) * cost).toFix(2);
-            $scope.hal_cost = ((($scope.hal_wattage * total_hours) / 1000) * cost).toFix(2);
-            $scope.cfl_cost = ((($scope.cfl_wattage * total_hours) / 1000) * cost).toFix(2);
-            $scope.led_cost = ((($scope.led_wattage * total_hours) / 1000) * cost).toFix(2); 
+                /*-- cost in pennies --*/
+                var cost = $scope.current_cost / 100;
+                
+                $scope.inc_cost = ((($scope.inc_wattage * total_hours)/1000) * cost).toFixed(2);
+                $scope.hal_cost = ((($scope.hal_wattage * total_hours)/1000) * cost).toFixed(2);
+                $scope.cfl_cost = ((($scope.cfl_wattage * total_hours)/1000) * cost).toFixed(2);
+                $scope.led_cost = ((($scope.led_wattage * total_hours)/1000) * cost).toFixed(2);
+        
             
         }
         

@@ -47,7 +47,7 @@
 		            <h4>Lumens</h4>
                     <p>Brightness<br>of bulb</p>
                     <select ng-change="calculate()" ng-model="current_lumens" ng-options="o as o for o in lumen_options">                       
-                    </select>
+                    </select> lumens
 		        </div>    
 		        <div>
 		            <h4>kWh</h4> 
@@ -58,9 +58,8 @@
 		            <h4>Hours</h4>
 		            <p>Useage <br>per day</p>
 		            <input type="number" ng-change="calculate()" ng-model="current_hours" value="{{current_hours}}"> cents
-		        </div>    
-		    </form>  
-		    
-		</div>
+		        </div>
+            </form>
+
 	</body>
 </html>
