@@ -17,5 +17,9 @@ Built a SQLite database.
 NodeJS:
 Built a small website.
 
+AngularJS:
+Built a application to calculate efficiency and cost of different light bulb type and wattage for comparison.
+Built a application for messaging.
+
 
 
