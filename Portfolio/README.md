@@ -8,7 +8,7 @@ that I wanted to play with.
 Some of the Languages and script used:
 -HTML and CSS for creating the standard look of the webpage and adding some animation on the initial screen.
 -BootStrap for creating the dynamic webpage and adding Modals to allow description for each Development Skills. I M still in the process of giving descriptions in all the modals for each language or script.
--PHP break out some of the HTML code to allow for easy and quick editing of webpage.
+-PHP break out some of the HTML code to allow for easy and quick editing of webpage. I also wanted to use PHP for an email messenger to contact me at the bottom of the page.  I always thought it is inconvenient to copy an email address from a websit and then use gmail or yahoo to send an email to the website company.
 -JavaScript 
 
 I hope you like it and would enjoy to hear feedback on what you think!
