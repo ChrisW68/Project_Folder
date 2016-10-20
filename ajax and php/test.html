@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <script type="text/javascript">
+          
+        function updateText() (
+            var current_text = document.getElementById('user_text').value;
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function() {
+                /* If the readState value 4 and http.status is equal to 200
+                   then response will be in text
+                */
+                if(http.readyState == 4 && http.status == 200) {
+                    var response = http.responseText;
+                    /* Change the value of server_response to response value */
+                    document.getElementById('server_response').value = response;
+                */
+                }   
+            };
+          
+          http.open("GET", "http://localhost/temp/server.php? user_text="+current_text, true );
+          http.send();
+          
+        ) 
+      </script>
+      
+       <title>First AJAX example</title>
+   </head>
+    <body>
+        <div>
+            Input Text : <input type="text" id="user_text" name="user_text" onkeyup="updateText();" />
+        </div></br>
+        <div>
+            Server Resp. : <input type="text" id="server_response" name="server_response" readonly />
+        </div>
+    </body>
+</html>
