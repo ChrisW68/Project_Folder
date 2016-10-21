@@ -5,7 +5,7 @@ Being a engineer, I enjoy finding solutions to problems.  I started out my profe
 This repository contains solutions to some of challenges I created:
 
 HTML & CSS:
-•Built a login page using HTML and CSS
+•Built a login page using HTML and CSS</br>
 <a href="https://github.com/ChrisW68/Project_Folder/tree/master/Portfolio">•Built a Portfolio website using HTML and CSS</a>
 
 BOOTSTRAP:
