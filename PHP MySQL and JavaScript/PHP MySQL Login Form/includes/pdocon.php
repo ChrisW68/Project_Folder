@@ -26,7 +26,7 @@ class Pdocon{
         );
         
         try{
-            $this->dbh = new DO($dsn, $this->user, $this->pass, $option);
+            $this->dbh = new PDO($dsn, $this->user, $this->pass, $option);
             
             //echo "Successfully Connected";
         }catch(PDOException $error){

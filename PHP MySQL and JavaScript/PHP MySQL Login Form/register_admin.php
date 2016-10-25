@@ -30,8 +30,8 @@ if(isset($_POST['submit_login'])){
 
 
 //Collect image and mve image to upload_image folder
-    $img_file = FILES['image']['name'];
-    $img_tmp = FILES['image']['tmp_name'];
+    $img_file = $_FILES['image']['name'];
+    $img_tmp = $_FILES['image']['tmp_name'];
     
 //Move image to final location
     move_uploaded_file($img_tmp, "uploaded_image/$img_file");
@@ -39,35 +39,36 @@ if(isset($_POST['submit_login'])){
     echo $clean_username;
     echo $hash_password;
     
-    $db->quer("SELECT * FROM admin WHERE email = :email");
+    $db->query("SELECT * FROM admin WHERE email = :email");
+    //System check to see if user exist
     $db->bindvalue(':email', $clean_email, PDO::PARAM_STR);
     
     $row = $db->fetchSigle();
     
     if($row){
-        echo '<div class = "alert alert-danger">
+        echo '<div class = "alert alert-danger text-center">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Bummer!</strong> User already exists. Try again!</div>';
     }else{
-        $db->quer("INSERT INTO admin(id, username, email, password, gender, image) 
+        $db->query("INSERT INTO admin(id, username, email, password, gender, image) 
                                VALUE(NULL, :username, :email, :password, :gender, :image)");  
         
-        $db->bindvalue(':username', $clean_email, PDO::PARAM_STR);
+        $db->bindvalue(':username', $clean_username, PDO::PARAM_STR);
         $db->bindvalue(':email', $clean_email, PDO::PARAM_STR);
-        $db->bindvalue(':gender', $clean_email, PDO::PARAM_STR);
-        $db->bindvalue(':password', $clean_email, PDO::PARAM_STR);
-        $db->bindvalue(':image', $clean_email, PDO::PARAM_STR);
+        $db->bindvalue(':gender', $clean_gender, PDO::PARAM_STR);
+        $db->bindvalue(':password', $hash_password, PDO::PARAM_STR);
+        $db->bindvalue(':image', $img_file, PDO::PARAM_STR);
         
         $run = $db->execute();
             
         if($run){
-            echo '<div class = "alert alert-success">
+            echo '<div class = "alert alert-success text-center">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Yippie!</strong> It was successful! Please login.</div>';
             
         }else{
             
-            echo '<div class = "alert alert-danger">
+            echo '<div class = "alert alert-danger text-center">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Bummer!</strong>User could not be registered! Try Again.</div>';
             
