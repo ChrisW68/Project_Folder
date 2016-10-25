@@ -11,12 +11,12 @@ function sanitizestr($raw_value){
 }
 
 //function to validate value for email
-function validate($raw_email) {
+function valemail($raw_email) {
     return filter_var($raw_email, FILTER_VALIDATE_EMAIL);
 }
 
 //function to validate value for integer
-function validateint($raw_int) {
+function valint($raw_int) {
     return filter_var($raw_int, FILTER_VALIDATE_INT);
 }
 
