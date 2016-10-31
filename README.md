@@ -18,8 +18,9 @@ Python:
 Built a SQLite database.
 
 PHP:
-<a href="https://github.com/ChrisW68/Project_Folder/tree/master/PHP%20programs/AJAX%20%26%20PHP%20Chat%20messenger">•Built a messenger application</a> 
+<a href="https://github.com/ChrisW68/Project_Folder/tree/master/PHP%20programs/AJAX%20%26%20PHP%20Chat%20messenger">•Built a messenger application</a><br>
 <a href="https://github.com/ChrisW68/Project_Folder/tree/master/PHP%20programs">•Email submit program that allows emails from the webpage be sent with message to predesignated email address</a>
+<a href="https://github.com/ChrisW68/Project_Folder/tree/master/PHP%20MySQL%20and%20JavaScript">•Building a login page with administration level and user label.  I am developing this into another project that will allow me to store all my monthly bills and send them to someone as a email, dividing the bills before sending.  This application will also allow me to see a historical record of the electric bill and gas bill to see if any improvement on the house is making any dent to the bills.
 
 
 NodeJS:
