@@ -4,6 +4,8 @@
 
 //Include functions
 
+include('includes/functions.php');
+
 //check to see if user if logged in else redirect to index page
 
 ?>
@@ -46,7 +48,7 @@
 <div class="container"> 
    <div class="rows">
      
-      <?php // call your display function to display session message on top page ?>
+      <?php showmsg(); ?>
       
      <div class="col-md-9">
          

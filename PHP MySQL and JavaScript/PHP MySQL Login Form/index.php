@@ -28,13 +28,31 @@ if(isset($_POST['submit_login'])){
     
     echo $row['email'];
     
+    
+    
     if($row){
- /*       $_SESSION['user_data']= array (
-                                'email' = $row['email'];
-                                'id' = $row['id'];
+        
+        $db_image = $row['image'];
+        $s_image = "<img src='admin/uploaded_image/$db_image' class='profile_image' />";
+        
+        $db_username = $row['username'];
+        
+        $_SESSION['user_data'] = array(
+            'username' = $row['username'],
+            'email' = $row['email'],
+            'id' = $row['id'],
+            'image' = $s_image;);
+       
+        
+        $_SESSION['user_is_loggedin'] = true;
+        
+        redirect('admin/myadmin.php');
+        
+        keepmsg('<div class = "alert alert-danger text-center">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Welcome!</strong>'. $db_username . '<p>lets begin!</p>s</div>');
         
         
-        )   */
         
     }else{
             
