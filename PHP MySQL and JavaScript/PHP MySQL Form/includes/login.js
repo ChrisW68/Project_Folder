@@ -27,7 +27,7 @@ $(function() {
             //Hide error message if visible
             $('#emailError').hide();
         
-        }else {
+        }else {l
             //Invalid email address
             //Add error class
             $('#emailP').addClass('error');
@@ -36,8 +36,40 @@ $(function() {
             $('#emailError').Show();
     
             //Validate password
+            if ($('#password').val().length > 0) {
+                password = $('#password').val();
+                $('#passwordP').removeClass
+                ('error');
+                $('#passwordError').hide();
+            }else {
+                $('#passwordP').addClass
+                ('error');
+                $('#passwordError').show();
+            }
             
-                       
+            //If O.K. perform AJAX request
+            Ajax request:
+            if (email && password) {
+                //Create a object
+                form data:
+                var data = new Object();
+                data.email = email;
+                data.password = password;
+                
+                //Create an object of Ajax options
+                options:
+                var options = new Object();
+                
+                //Establish each setting
+                options.data = data;
+                options.dataType = 'text';
+                options.type = 'get';
+                options.success = function(response) {
+                    if (response == 'CORRECT') {
+                        $('#login').hide(0;)
+                    }
+                }
+            }
                        }
                       )
     })
