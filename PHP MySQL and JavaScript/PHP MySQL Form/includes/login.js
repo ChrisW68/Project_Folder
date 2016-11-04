@@ -66,12 +66,33 @@ $(function() {
                 options.type = 'get';
                 options.success = function(response) {
                     if (response == 'CORRECT') {
-                        $('#login').hide(0;)
+                        $('#login').hide();
+                    
+                    //show a message
+                    $('#results').removeClass('error');
+                    $('#results').text('You are now logged in!');
+                        
+                    }else if (response == 'INCORRECT') {
+                        $('#results').text('The email and password don\'t match those on file');
+                        $('#results').addClass('error');
+                        
+                    }else if (response == 'INCOMPLETE') {
+                        $('results').text('Please enter an email address and a password');
+                        $('results').addClass('error');
+                    }else if (response == 'INVALID_EMAIL') {
+                        $('results').text('Please provide email address!');
+                        $('results').addClass('error');
                     }
-                }
-            }
-                       }
-                      )
-    })
+                }; //End of success
+                option.url = 'login_ajax.php';
+                
+                //Perform the request
+                $.ajax(options);
+                
+            }  //End of email && password IF
     
-})
+               //Return false to prevent an actual form submission
+            return false;
+    
+    });  //End of form submission
+}); // End of document ready
