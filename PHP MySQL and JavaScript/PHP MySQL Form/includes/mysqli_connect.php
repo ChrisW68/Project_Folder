@@ -12,8 +12,13 @@ DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'sitename');
 
 //Make the connection
-$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR
-    die ('Could not connect to MySQL: ' .mysqli_connect_error() );
+$mysqli= new MySQLi (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-//Set the encoding
-mysqli_set_charset($dbc, 'utf8');
+// Verify the connection
+if ($mysqli->connect_error) {
+    echo $mysqli->connect_error;
+    unset($mysqli);
+}else {
+    $mysqli->set_charset('utf8');
+}
+
