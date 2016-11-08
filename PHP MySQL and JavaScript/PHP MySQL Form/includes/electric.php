@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chevy Electric Bill Calculator</title>
+    <title>Electric Bill Calculator</title>
 </head>
 <body>
-<?php # chevyVoltCalculator.php
+<?php # electric.php
     
-    $page_title = "Chevy Electric Bill Calculator";
+    $page_title = "Electric Bill Calculator";
   
     
     //Check for form submission
@@ -29,6 +29,7 @@
         
             
          //Calculates the results
+            $avgTemp = $_POST['avgTemp'];
             $perkWh = number_format((float)($_POST['avgCostDaily'] / $_POST['avgkWhDaily']), 3, '.', '');
             $monthlyCost = $_POST['electricBillMonthly'];
      
@@ -36,7 +37,7 @@
         //Print the results
         echo '<h1>Total Estimated Cost</h1>
              <p>Cost per kiloWatts is: $' . $perkWh . ' daily.<br>With a monthly
-             cost of charging the Volt being: $' . $monthlyCost . '<p>';
+             cost being: $' . $monthlyCost . '<p>';
              
             
         } else {
@@ -54,11 +55,19 @@
       <p>Avg Daily Temp: <input type="text" name="avgTemp" /></p>
       <p>Avg kWh per day: <input type="text" name="avgkWhDaily" /></p>
       <p>Avg cost per day: <input type="text" name="avgCostDaily" /></p>  
-      <p>How many Service days: <input type="text" name="serviceDays" /></p>   
-      <p><input type="submit" name="submit" value="Save!" /></p>
+      <p>How many Service days: <input type="text" name="serviceDays" /></p>
+      <p><input type="submit" name="submit" value="Calculate!" /></p>
        
-   </form>
-    
-    
+   </form>  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
