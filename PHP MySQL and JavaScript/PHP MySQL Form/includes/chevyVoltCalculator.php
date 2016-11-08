@@ -6,9 +6,7 @@
 </head>
 <body>
 <?php # chevyVoltCalculator.php
-    
     $page_title = "Chevy Volt Calculator";
-  
     
     //Check for form submission
     if ($_SERVER['REQUEST_METHOD'] =='POST') {
