@@ -57,12 +57,12 @@
         $avgCostkW = $_POST['avgCostDaily'] / $_POST['avgkWhDaily'];
         $avgDailyCost = number_format((float)($voltKwDailyUsed * $avgCostkW),2,'.', '');
         $avgMonthly = number_format((float)(($_POST['serviceDays']*.71) * $avgDailyCost), 2, '.', '');
-        $leslieBill = number_format((float)((($_POST['electricBillMonthly'] - $avgMonthly) / 2) + $avgMonthly), 2,'.', '');
+        $voltShare = number_format((float)((($_POST['electricBillMonthly'] - $avgMonthly) / 2) + $avgMonthly), 2,'.', '');
             
         //Print the results
         echo '<h1>Total Estimated Cost</h1>
         <p>The total cost per day of the Chevy Volt is: $' . $avgDailyCost . ' daily.<br>With a monthly
-             cost of charging the Volt being: $' . $avgMonthly . '. <br>Which will make Leslies portion: $' . $leslieBill . '<p>';
+             cost of charging the Volt being: $' . $avgMonthly . '. <br>Which will make Leslies portion: $' . $voltShare . '<p>';
             
             
         } else {

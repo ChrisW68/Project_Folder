@@ -34,7 +34,7 @@ body {
 	margin:0 auto;
 	width:751px;
 }
-#header h1 {
+#header h1, #li {
 	color:#74050C;
 	font-size:300%;
 	letter-spacing:-3px;
@@ -43,6 +43,13 @@ body {
 	margin-bottom:-20px;
 }
 #header h2 {
+	color:#CCC;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:right;
+}
+
+#ps {
 	color:#CCC;
 	font-size:200%;
 	letter-spacing:-2px;

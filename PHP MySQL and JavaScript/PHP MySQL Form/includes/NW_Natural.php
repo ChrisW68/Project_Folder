@@ -48,7 +48,7 @@
     //Leave the PHP section and create the HTML form
  ?>
    
-<h1>Electric Bill</h1>
+<h1>NW Natural Gas Bill</h1>
    <form action="electric.php" method="post">
       <p>Natural Gas Bill Cost: <input type="text" name="gasBillMonthly" /></p>
       <p>Avg Daily Temp: <input type="text" name="avgTemp" /></p>

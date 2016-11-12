@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/jquery-1.6.1.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/login.js" charset="utf-8"></script>
 </head>
