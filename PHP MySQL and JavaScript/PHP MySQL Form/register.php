@@ -90,5 +90,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <form action="register.php" method="post">
     <p>Username: <input type="text" name="username" size="10" maxlength="18" value="<?php if
     (isset($_POST['userame'])) echo $_POST['username']; ?>" /></p>
-    
+    <p>Email Address: <input type="text" name="email" size="20" maxlength="35" value="<?php if
+    (isset($_POST['email'])) echo $_POST['email']; ?>" /></p>
+    <p>Password: <input type="password" name="pass1" size="10" maxlength="18" value="<?php if
+    (isset($_POST['pass1'])) echo $_POST['pass1']; ?>" /></p>
+    <p>Confirm Password: <input type="password" name="pass2" size="10" maxlength="18" value="<?php if
+    (isset($_POST['pass2'])) echo $_POST['pass2']; ?>" /></p>
 </form>
+
+
+<?php include ('includes/footer.html'); ?>

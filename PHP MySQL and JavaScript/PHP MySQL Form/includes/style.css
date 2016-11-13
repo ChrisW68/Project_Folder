@@ -22,7 +22,7 @@ a:hover {
 
 /* body */
 body {
-	background:#2F4F4F;
+	background:#fff;
 	color:red;
 	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
 }
@@ -68,7 +68,7 @@ body {
 #navigation li {
 	border-left:1px solid #999;
 	float:left;
-	width:149px;
+	width:11%;
 	list-style:none;
 }
 #navigation a {
