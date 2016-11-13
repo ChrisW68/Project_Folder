@@ -29,20 +29,25 @@ if ($num >0) { //If it ran OK, display the records
     //Table header
     echo '<table align="center" cellspacing="3" cellpadding="3"
     width="75%">
-    <tr><td align="left"><b>UserName</b>
-    </td><td align="left"><b>Date Registered</b></td></tr>';
+    <tr>
+    <td align="left"><b>Edit</b></td>
+    <td align="left"><b>Delete</b></td>
+    <td align="left"><b>Username</b></td>
+    <td align="left"><b>Date Registered</b></td></tr>';
     
     //Fetch and print all the record
     while ($row= mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-        echo '<tr><td align="left">' . 
-            $row['name'] . '</td><td align = "left">'
-            . $row['dr'] . '</td></tr>';
+        echo '<tr>
+        <td align="left"><a href="edit_user.php?id=' .$row['user_id'] . '">Edit</a></td>
+        <td align="left"><a href="delete_user.php?id=' .$row['user_id'] . '">Delete</a></td>
+        <td align="left">' . $row['username'] . '</td>
+        <td align="left">' . $row['dr'] . '</td>
+        </tr>
+        ';
     }
     
     //Close table
     echo '</table>';
-    
-    //Free up the resources
     mysqli_free_result ($r);
 }else {
     //If no records were returned
