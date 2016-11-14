@@ -15,7 +15,7 @@ if((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
     $id = $_POST['id'];
 }else {
     //No Valid ID, kill the script
-    echo '<p class="error">This page has been accessed in error.</p>'
+    echo '<p class="error">This page has been accessed in error.</p>';
     include ('includes/footer.html');
     exit();
 }
