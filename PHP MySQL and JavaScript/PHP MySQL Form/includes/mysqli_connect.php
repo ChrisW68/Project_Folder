@@ -12,7 +12,7 @@ DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'sitename');
 
 //Make the connection
-$mysqli = new MySQLi (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$mysqli = new MySQLI (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 // Verify the connection
 if ($mysqli->connect_error) {
