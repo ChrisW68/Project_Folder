@@ -13,7 +13,8 @@ import Header from './src/components/header';
 //Component nesting.  Taking the header component and placing it in App component
 const App = () => (
 
-    <Header />
+	//When Header is rendered the prop of headerText is passed in with a value Albums
+    <Header headerText={'Albums'} />
     );
 
 // Render it to the device
