@@ -1,8 +1,9 @@
 //Import React and also want the Component property from the React library as well
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from'./AlbumDetail';
+
 
 /* By using extends Component indicating 
 I want to borrow functionality from the base Component class */
@@ -25,9 +26,9 @@ class AlbumList extends Component {
 	render() {
 		console.log(this.state);
 		return (
-			<View>
+			<ScrollView>
 				{this.renderAlbums()}
-			</View>
+			</ScrollView>
 		);
 	}
 }

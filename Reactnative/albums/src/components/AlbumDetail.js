@@ -1,14 +1,16 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 const AlbumDetail = ({ album }) => {
 	//Destructoring from props to reduce reference for props and albums
 	const { title, 
 					artist, 
 					thumbnail_image, 
-					image 
+					image,
+					url
 				} = album;
 	//Destructoring from styles to since it is referenced multiple times
 	const { thumbnailStyle, 
@@ -35,10 +37,18 @@ const AlbumDetail = ({ album }) => {
 					</Text>
 				</View>
 			</CardSection>
+
 			<CardSection>
 				<Image 
 					style={imageStyle}
 					source={{ uri: image }} />
+			</CardSection>
+
+			<CardSection>
+				<Button onPress={() => Linking.openURL(url)}>
+					Buy Now
+				</Button>
+
 			</CardSection>
 		</Card>
 	);
