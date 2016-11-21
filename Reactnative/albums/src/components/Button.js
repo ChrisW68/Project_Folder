@@ -1,19 +1,13 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
-
-const Button = ( {onPress, children} ) => {
-	const { buttonStyle, textStyle } = styles;
-
-	return (
-		<TouchableOpacity onPress={onPress} style={buttonStyle}>
-			<Text style={textStyle}>
-				{children}
-			</Text>
-		</TouchableOpacity>
-	);
-};
-
-const styles= {
+ const Card = (props) => { 
+ 	return ( 
+		<View style={styles.containerStyle}> 
+			{props.children} 
+		</View> 
+ 	); 
+ }; 
+ const styles= {
 	textStyle: {
 		alignSelf: 'center',
 		color: '#007aff',
