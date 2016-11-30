@@ -83,7 +83,7 @@
 				  <?php include ("php/htmlCss.php");?>
                 </div>
                 <div class="element-item grid">
-				  <a class="btn" href="myCalculator/index.html"><img src="img/ANGULARLOGO.PNG" width="125px"></a>
+				  <a class="btn" href="myCalculator/energycalculator.html"><img src="img/ANGULARLOGO.PNG" width="125px"></a>
                 </div>
                 <div class="element-item grid">
 				  <?php include ("php/SQLskills.php");?>
