@@ -50,9 +50,9 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Development Skills</a></li>
-                                    <li><a href="#services"><i class="fa fa-bullhorn"></i> Me</a></li>
-                                    <li><a href="#testimonials"><i class="fa fa-bookmark"></i> Soft Skills</a></li>
+                                    <li><a href="#developmentskills"><i class="fa fa-bookmark"></i> Development Skills</a></li>
+                                    <li><a href="#portfolio"><i class="fa fa-bullhorn"></i> Me</a></li>
+                                    <li><a href="#softskills"><i class="fa fa-bookmark"></i> Soft Skills</a></li>
                                     <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
                                 </ul>
                             </div>  <!-- /.navbar-collapse -->
@@ -67,12 +67,7 @@
                         <center><h4 class="tagline">Software Developer - Web Developer</h4></center>
                         
                     </div>  <!-- container -->
-                    
                 </div>  <!-- middle -->
-                <div>    
-                    <!-- Contact me button.  Placed it in a PHP file to use throughout webpages if needed.-->                    	
-                   
-                </div> 
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
 
@@ -88,7 +83,7 @@
 				  <?php include ("php/htmlCss.php");?>
                 </div>
                 <div class="element-item grid">
-				  <?php include ("php/PHPskills.php");?>
+				  <a class="btn" href="myCalculator/index.html"><img src="img/ANGULARLOGO.PNG" width="125px"></a>
                 </div>
                 <div class="element-item grid">
 				  <?php include ("php/SQLskills.php");?>
@@ -96,28 +91,18 @@
                 <div class="element-item grid">
 				  <?php include ("php/Pythonskills.php");?>
                 </div>
-                <div class="element-item grid">
-				  <?php include ("php/MVC.php");?>
-                </div>
-                <div class="element-item grid">
-				  <?php include ("php/JavaScript.php");?>
-                </div>
-    <div class="element-item grid">
-    <?php include ("php/WorkInProgress.php");?>
-                </div>
               </div>
             </div>	<!-- isotope portfolio-items -->
             <!-- Pulse arrow down to next section button that pulsates-->
             <center><a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse" align="center"></i></a></center>
-         
         </div>  <!-- content-block -->
         <div id="aboutme" class="content-block">
           <div id="numbers" class="parallax">
               <?php include ("php/about-me.php");?> 
           </div>
     	</div><!-- content-block -->
-        <div class="content-block text-center" id="softskills" margin-top="10px">
-            <header class="block-heading cleafix">
+        <div class="content-block text-center" id="softskills">
+            <header class="block-heading cleafix" >
                 <h1>Soft Skills</h1>
               <p class="wheretopress">(Press programming logos for more detail)</p></center>
               <!-- <p>Take a look at some of my recent products</p> -->
@@ -127,12 +112,7 @@
                     <?php include ("php/time-management.php");?>
        				<?php include ("php/big-data.php");?>
                     </center>
-   
-    </div>	
-    <div>
-        <!-- Button control that is used throughout website. -->
-    	<?php include ("php/contactme1.php");?>
-    </div>	<!-- content-block -->
+    	</div>	
         <div class="content-block" id="contact">
           <div class="overlay-3 clearfix">
             <header class="block-heading cleafix text-center">
@@ -141,46 +121,40 @@
                 <div class="block-content text-center">
                     <div class="container">
                         <div class="row">
-                        <?php include ("php/contact.php");?>
-                        <div class-"col-md-4"><br>
-						</div>
-                        	
-							<div class="col-md-4 wow animated fadeInRight col-lg-offset-1" "align="center">
-              					<div class="row">
-                                    <div class="col-md-12">
-                                        <div class="contact-info">
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-map-marker"></i>
-                                                </div>
-                                                <p><strong> Address:</strong> Portland, OR.
-                                                </p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-mobile"></i>
-                                                </div>
-                                                <p><strong> Cell No:</strong> 916-759-4893 </p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-envelope-o"></i>
-                                                </div>
-                                                <p>
-                                                    <strong> Email:</strong> chris.wiseman74@gmail.com
-                                              </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <a class="btn btn-github" href="https://github.com/ChrisW68"><i class="fa fa-github"></i> - See what I have been doing!</a>
-                                    <a class="btn btn-linkedin" href="https://www.linkedin.com/in/mrwiseman"><i class="fa fa-linkedin"></i> - Click! To find more about me</a>  
-                                </div>
-                            </div>
+                        	<?php include ("php/contact.php");?>
+                          <div class="col-md-5 wow animated fadeInRight col-lg-offset-1" "align="center">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="contact-info">
+                                          <div class="clearfix">
+                                              <div class="rotated-icon">
+                                                  	<i class="fa fa-map-marker"></i>
+                                              </div>
+                                              <p><strong> Address:</strong> Portland, OR.</p>
+                                          </div>
+                                          <div class="clearfix">
+                                              <div class="rotated-icon">
+                                                  	<i class="fa fa-mobile"></i>
+                                              </div>
+                                              <p><strong> Cell No:</strong> 916-759-4893 </p>
+                                          </div>
+                                          <div class="clearfix">
+                                              <div class="rotated-icon">
+                                                  	<i class="fa fa-envelope-o"></i>
+           
+                                              </div>
+                                              <p>
+                                                  <strong> Email:</strong> chris.wiseman74@gmail.com
+                                            </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <a class="btn btn-github" href="https://github.com/ChrisW68"><i class="fa fa-github"></i> - See what I have been doing!</a>
+                                  <a class="btn btn-linkedin" href="https://www.linkedin.com/in/mrwiseman"><i class="fa fa-linkedin"></i> - Click! To find more about me</a>  
+                              </div>
+                          </div>
                         </div>
                     </div>
                 </div>	<!-- block-content -->
@@ -212,7 +186,6 @@
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.isonscreen.js"></script>
-       
         <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <link href="../css/main.css" rel="stylesheet" type="text/css">
 <div class="overlay-3">
               <!-- title -->
-  <div class="content-block overlay-3 text-center" id="portfolio" margin-top="10px">
+  <div class="content-block text-center" id="portfolio" margin-top="10px">
     <header class="block-heading cleafix">
         <h1>A little history about me and how it's made me who I am today</h1></center>
     </header>
