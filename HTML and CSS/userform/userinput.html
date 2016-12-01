@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Untitled Document</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+<link href="css/bootstrap-3.3.6.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<!-- HTML5 shim for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+<!-- In the head section of the page -->
+</head>
+<body>
+	<div class="gridContainer clearfix">
+		<div id="div1" class="fluid">
+          	<!-- /input-group -->
+        	<form id="login" action="/login" method="post">
+            	<div class="two-thirds column" id="main">
+                	<fieldset>
+                    	<legend>Login</legend>
+                        <div>
+                        	<label for="username">Username: </label>
+                        	<input type="text" id="username" name="username" />
+                        </div>
+                        <div>
+                        	<label for="password">Pasword: </label>
+                        	<input type="password" id="password" name="password" />
+                        </div>
+                        <div>
+                        	<input type="checkbox" id="showPWD">
+                        	<label for="showPassword">Show Password</label>
+                        </div>
+                        <input type="submit" value="login" />
+                    </fieldset>
+                </div>
+            </form>
+            <script src="js/utilities.js"></script>
+            <script src="js/submit-event.js"></script>
+        </div>
+	</div>
+</body>
+</html>
