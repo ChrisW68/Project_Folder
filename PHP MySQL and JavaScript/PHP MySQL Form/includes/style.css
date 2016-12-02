@@ -56,6 +56,10 @@ body {
 	text-align:right;
 }
 
+.chevyVolt {
+    background-color:bisque;
+}
+
 /* navigation */
 #navigation {
 	background:#fafafa;

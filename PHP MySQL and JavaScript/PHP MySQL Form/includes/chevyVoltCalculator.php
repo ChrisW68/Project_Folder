@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 <head>
     <meta charset="UTF-8">
     <title>Chevy Volt Calculator</title>
+    
 </head>
-<body>
+<body id="chevyVolt">
 <?php # chevyVoltCalculator.php
     $page_title = "Chevy Volt Calculator";
     
@@ -71,10 +73,10 @@
         }
     }  //End of main submission IF
     
-    //Leave the PHP section and create the HTML form
+    //Leaving the PHP section and create the HTML form
  ?>
    
-<h1>Chevy Volt Cost</h1>
+<h1 class="chevy" class="pulsate">Chevy Volt Cost</h1>
    <form action="chevyVoltCalculator.php" method="post">
       <p>Electric Bill Cost: <input type="text" name="electricBillMonthly" /></p>
       <p>Avg Daily Temp: <input type="text" name="avgTemp" /></p>
