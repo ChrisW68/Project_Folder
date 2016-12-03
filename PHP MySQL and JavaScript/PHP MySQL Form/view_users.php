@@ -6,7 +6,7 @@ $page_title = 'View the current users';
 include ('includes/header.html');
 echo '<h1>Registered Users</h1>';
 
-require_once ('../mysqli_connect.php');
+require_once ('./includes/mysqli_connect.php');
 
 //Number of records to show per page
 $display = 5;
@@ -81,7 +81,7 @@ mysqli_close($dbc);
 //Make the links to other pages, if necessary
 if ($pages > 1) {
     //Add some spacing and start a paragraph
-    ech '<br /><p>';
+    echo '<br /><p>';
     
     //What page the script is
     
@@ -94,7 +94,7 @@ if ($pages > 1) {
     }
     
     //Make all the numbered pages
-    for ($i = 1 <= $pages; $i++) {
+    for ($i = 1; $i <= $pages; $i++) {
         if ($i != $current_page) {
             echo '<a href="view_users.php?s=' . (($display *
             ($i - 1))) . '&p=' . $_pages . '">' . $i . '</a> ';
