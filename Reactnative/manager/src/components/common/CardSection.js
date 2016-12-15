@@ -4,7 +4,7 @@ import { View } from 'react-native';
 //Purpose is to create styling to make it look like a card
 const CardSection = (props) => {
 	return (
-		<View style={styles.containerStyle}>
+		<View style={[styles.containerStyle, props.style]}>
 			{props.children}
 		</View>
 	);
